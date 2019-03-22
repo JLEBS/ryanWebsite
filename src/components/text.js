@@ -9,6 +9,7 @@ const Heading = styled.h1
     color: ${white};
     text-shadow: 3px 3px ${black};
     text-transform: uppercase;
+    text-align: center;
     ${props => props.primary && css`
     font-size: 24px;
     text-shadow: 1px 1px ${black};

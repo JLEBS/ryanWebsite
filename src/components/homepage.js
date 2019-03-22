@@ -3,19 +3,25 @@ import React from 'react';
 import { Wrapper, Container } from './wrapper';
 import { Heading, Paragraph } from './text';
 import Video from './video';
+import  Footer from './footer';
 import Subsection from './subsection';
 
 
 const HomePage = () => (
 
 <Wrapper>
-    <Video></Video>
-    <Heading>
-        Ryan Callard
-    </Heading>
-    <Heading as='h2' primary >
-        Creative Producer for Audio and Video content.
-    </Heading> 
+    {/* <Video></Video> */}
+    
+    <Container>
+        <Heading>
+            Ryan Callard
+        </Heading>
+        <Heading as='h2' primary >
+            Creative Producer for Audio and Video content.
+        </Heading> 
+
+    </Container>
+
     <Subsection/>
     <Subsection>
         <Paragraph>
@@ -28,7 +34,6 @@ const HomePage = () => (
 
             Ryan also volunteers as lead organiser of annual livestream charity event Hugs.tf, and as a videographer and editor for Tip of the Hats.
         
-            
         </Paragraph>
     </Subsection>
     <Subsection>
@@ -37,6 +42,8 @@ const HomePage = () => (
         </Paragraph>
 
     </Subsection>
+
+    <Footer></Footer>
 </Wrapper>
 );
 

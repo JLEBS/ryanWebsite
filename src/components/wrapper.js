@@ -8,8 +8,9 @@ const Wrapper = styled.div`
 const Container = styled.div`
     max-width: 1480px;
     width: 100%;
-    padding: 0 40px;
     margin: 0 auto;
+    padding-left:30px;
+    padding-right:30px;
     position: relative;
     z-index: 1;
 `;
