@@ -3,7 +3,7 @@ import React from 'react';
 import { Wrapper, Container } from './wrapper';
 import { Heading, Paragraph } from './text';
 import Video from './video';
-import  Footer from './footer';
+import Footer from './footer';
 import Subsection from './subsection';
 
 
@@ -43,7 +43,9 @@ const HomePage = () => (
 
     </Subsection>
 
-    <Footer></Footer>
+    <Footer>
+
+    </Footer>
 </Wrapper>
 );
 
