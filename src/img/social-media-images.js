@@ -26,8 +26,10 @@ import styled, {css} from 'styled-components';
 // );
 
 const WidthHeight = () => (
-  `height: 150px;
-  width: 150px;`
+  // `height: 150px;
+  // width: 150px;`
+
+  `width: 20vw; height: 20vh;`
 );
 
 
