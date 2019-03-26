@@ -1,37 +1,9 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 
-//TEMP
-// const Styling = (name) => (
-//   `
-//   height: 150px;
-//   width: 150px;
-
-//   & #${name}-path{
-//     fill: black;
-//     opacity: 0.5;
-//     stroke: lightgrey;
-//     stroke-width: 0.5px;
-//     stroke-dasharray: 125;
-//     stroke-dashoffset: -125;
-//     stroke-linecap: butt;
-//     transition: all 0.3s ease-out;
-//   } 
-//   & #${name}-path:hover {
-//     opacity: 1;
-//     stroke-dashoffset: 0;
-//     stroke-dasharray: 125;
-//   }
-// `
-// );
-
 const WidthHeight = () => (
-  // `height: 150px;
-  // width: 150px;`
-
   `width: 10vw; height: 10vh;`
 );
-
 
 const PathStatic = () => (
   `fill: black;
@@ -131,50 +103,50 @@ const StyledYoutube = styled.svg`
 
 
 
-export const Spinner = () => (
-  <StyledSpinner viewBox="0 0 50 50">
-    <circle
-      className="path"
-      cx="25"
-      cy="25"
-      r="20"
-      fill="none"
-      strokeWidth="4"
-    />
-  </StyledSpinner>
-);
+// export const Spinner = () => (
+//   <StyledSpinner viewBox="0 0 50 50">
+//     <circle
+//       className="path"
+//       cx="25"
+//       cy="25"
+//       r="20"
+//       fill="none"
+//       strokeWidth="4"
+//     />
+//   </StyledSpinner>
+// );
 
-const StyledSpinner = styled.svg`
-  animation: rotate 2s linear infinite;
-  margin: -25px 0 0 -25px;
-  width: 50px;
-  height: 50px;
+// const StyledSpinner = styled.svg`
+//   animation: rotate 2s linear infinite;
+//   margin: -25px 0 0 -25px;
+//   width: 50px;
+//   height: 50px;
   
-  & .path {
-    stroke: #5652BF;
-    stroke-linecap: round;
-    animation: dash 1.5s ease-in-out infinite;
-  }
+//   & .path {
+//     stroke: #5652BF;
+//     stroke-linecap: round;
+//     animation: dash 1.5s ease-in-out infinite;
+//   }
   
-  @keyframes rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes dash {
-    0% {
-      stroke-dasharray: 1, 150;
-      stroke-dashoffset: 0;
-    }
-    50% {
-      stroke-dasharray: 90, 150;
-      stroke-dashoffset: -35;
-    }
-    100% {
-      stroke-dasharray: 90, 150;
-      stroke-dashoffset: -124;
-    }
-  }
-`;
+//   @keyframes rotate {
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+//   @keyframes dash {
+//     0% {
+//       stroke-dasharray: 1, 150;
+//       stroke-dashoffset: 0;
+//     }
+//     50% {
+//       stroke-dasharray: 90, 150;
+//       stroke-dashoffset: -35;
+//     }
+//     100% {
+//       stroke-dasharray: 90, 150;
+//       stroke-dashoffset: -124;
+//     }
+//   }
+// `;
 
 

@@ -25,6 +25,7 @@ const FlexRow = styled.div`
     flex-direction: row;
     justify-content: space-evenly; 
     align-items: center;
+    outline: 5px solid yellow;
 
     @media (max-width: 1000px) {
       

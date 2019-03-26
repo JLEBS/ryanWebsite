@@ -5,8 +5,6 @@ import { fluidRange } from 'polished'
 const white = Colors.textColorPrimary;
 const black = Colors.textColorSecondary;
 
-// const textChange = styled.div
-
 export const Heading = styled.h1
     `font-size: 100px;
     color: ${white};
@@ -20,7 +18,7 @@ export const Heading = styled.h1
           toSize: '100px',
         },
         '400px',
-        '1000px',
+        '1500px',
       )}
     ${fluidRange(
         {
@@ -29,7 +27,7 @@ export const Heading = styled.h1
           toSize: '150%',
         },
         '400px',
-        '1000px',
+        '1500px',
       )}
       ${fluidRange(
         {
@@ -38,7 +36,7 @@ export const Heading = styled.h1
           toSize: '10px',
         },
         '400px',
-        '1000px',
+        '1500px',
       )}
 `;
 
@@ -55,7 +53,7 @@ export const Subheading = styled.h2`
         toSize: '24px',
       },
       '400px',
-      '1000px',
+      '1500px',
     )}
   ${fluidRange(
       {
@@ -64,7 +62,7 @@ export const Subheading = styled.h2`
         toSize: '60px',
       },
       '400px',
-      '1000px',
+      '1500px',
     )}
     ${fluidRange(
       {
@@ -73,7 +71,7 @@ export const Subheading = styled.h2`
         toSize: '2.4px',
       },
       '400px',
-      '1000px',
+      '1500px',
     )}
 `;
 
@@ -91,7 +89,7 @@ export const Paragraph = styled.p`
           toSize: '24px',
         },
         '400px',
-        '1000px',
+        '1500px',
       )}
     ${fluidRange(
         {
@@ -100,7 +98,7 @@ export const Paragraph = styled.p`
           toSize: '32px',
         },
         '400px',
-        '1000px',
+        '1500px',
       )}
       ${fluidRange(
         {
@@ -109,7 +107,7 @@ export const Paragraph = styled.p`
           toSize: '2px',
         },
         '400px',
-        '1000px',
+        '1500px',
       )}
       ${fluidRange(
         {
@@ -118,7 +116,7 @@ export const Paragraph = styled.p`
           toSize: '16px',
         },
         '400px',
-        '1000px',
+        '1500px',
       )}
 `;
 
@@ -129,13 +127,14 @@ export const Bold = styled.a.attrs({
     `href=(${props.href});`}
     font-weight: 600;
     color: white;
+    font-size: 110%;
     text-decoration: inherit;
     text-decoration: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(
     	to right,
-	    ${Colors.linkHover},
+	    ${Colors.linkHoverLight},
 	    ${Colors.linkHover} 50%,
 	    white 50%);
 	    background-size: 200% 100%;
@@ -146,4 +145,4 @@ export const Bold = styled.a.attrs({
         background-position: 0%;
         pointer: cursor;
     }
-`
+`;

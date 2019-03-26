@@ -1,9 +1,10 @@
 import React from 'react';
 import Subsection from './subsection';
-import { ProfileImage } from './images';
+import { ProfileImage } from './profile-image';
 import Footer from './footer';
 import { Heading, Subheading, Paragraph, Bold } from './text';
 import { FlexColumn, FlexRow, Container } from './wrapper'; 
+import IconContainer from './video-selector';
 
 export const SectionOne = () => (
     <Subsection>
@@ -14,11 +15,11 @@ export const SectionOne = () => (
                 </Paragraph>
 
                 <Paragraph>
-                    Born in Somerset, he moved to London in 2010 to study Music Technology at the University of West London, graduating in 2013. He is a multi-instrumentalist with teaching experience.
+                    Born in Somerset, he moved to London in 2010 to study Music Technology at the <Bold href={'https://www.uwl.ac.uk/'}>University of West London</Bold>, graduating in 2013. He is a multi-instrumentalist with teaching experience.
                 </Paragraph>
 
                 <Paragraph>
-                    In 2018 he co-edited and released <Bold href={'https://www.youtube.com/watch?v=7DEvC47tvKc'}>Ready Up: Competitive Team Fortress 2</Bold>, a documentary focused around the competitive TF2 community, which has had over 50,000 views on Youtube, and features interviews from Paul "Redeye" Chaloner and other prominent industry figures from CSGO and the Overwatch League.
+                    In 2018 he co-edited and released <Bold href={'https://www.youtube.com/watch?v=7DEvC47tvKc'}>Ready Up: Competitive Team Fortress 2</Bold>, a documentary focused around the competitive TF2 community, which has had over 50,000 views on Youtube, and features interviews from <Bold href='https://en.wikipedia.org/wiki/Paul_Chaloner'>Paul "Redeye" Chaloner</Bold> and other prominent industry figures from CSGO and the Overwatch League.
                 </Paragraph>
 
                 <Paragraph>
@@ -33,10 +34,20 @@ export const SectionOne = () => (
     </Subsection>
 )
 
+
+export const SectionMiddle = () => ( 
+    <Subsection neutral>
+        <Container> 
+            <IconContainer></IconContainer>
+        </Container>
+    </Subsection>
+);
+
 export const SectionTwo = () => (
     <Subsection secondary>
         <Container>
             <FlexRow>
+                
                 <ProfileImage></ProfileImage>
             
                 <FlexColumn>
