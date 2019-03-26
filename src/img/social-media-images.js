@@ -45,7 +45,8 @@ const PathStatic = () => (
 const PathHover = () => (
   `opacity: 1;
   stroke-dashoffset: 0;
-  stroke-dasharray: 125;`
+  stroke-dasharray: 125;
+  `
 );
 
 

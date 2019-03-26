@@ -8,13 +8,13 @@ const Footer = () => (
   <footer>
     <SocialMediaGroup>
      
-      <SocialMediaItem href='https://twitter.com/lor_is'>
+      <SocialMediaItem target='_blank' href='https://twitter.com/lor_is'>
         <Twitter/> 
       </SocialMediaItem>
-      <SocialMediaItem href='linkedin.com'>
+      <SocialMediaItem target='_blank' href='linkedin.com'>
         <Youtube/> 
       </SocialMediaItem>
-      <SocialMediaItem href='linkedin.com'>
+      <SocialMediaItem target='_blank' href='linkedin.com'>
         <Linkedin/> 
       </SocialMediaItem>
 
