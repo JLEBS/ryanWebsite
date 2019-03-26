@@ -1,7 +1,6 @@
 import styled, {css} from 'styled-components';
 import Colors from './colors';
 
-
 const Subsection = styled.div`
 
     background-color: ${Colors.subSectionOne};
@@ -19,6 +18,8 @@ const Subsection = styled.div`
         background-color: ${Colors.subSectionTwo};
     
     `}
-
 `
+
+
+
 export default Subsection;

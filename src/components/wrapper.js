@@ -15,4 +15,9 @@ const Container = styled.div`
     z-index: 1;
 `;
 
-export { Wrapper, Container };
+const FlexContainer = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+`
+export { Wrapper, Container, FlexContainer};

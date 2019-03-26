@@ -1,15 +1,23 @@
 import React from 'react';
-import { SocialMediaGroup, SocialMediaItem } from './images'
-import twitter from '../img/twitter.svg'
-import youtube from '../img/youtube.svg'
-import linkedin from '../img/linkedin.svg'
+import { SocialMediaGroup, SocialMediaItem } from './images';
+//import {LinkedinSVG, TwitterSVG, YoutubeSVG } from '../img/social-media-images.js';
+//import linkedin from '../img/linkedin.svg'
+import { Spinner, Linkedin, Twitter, Youtube } from '../img/social-media-images.js'
 
 const Footer = () => (
   <footer>
     <SocialMediaGroup>
-      <SocialMediaItem imageUrl={twitter} href={'https://twitter.com/lor_is'} />
-      <SocialMediaItem imageUrl={youtube} href={'https://www.youtube.com/channel/UCIb7HfJ65qLsxP6w2yvo0rw'}/>
-      <SocialMediaItem imageUrl={linkedin} href={'https://www.linkedin.com/in/ryan-callard-682a38130'} />
+     
+      <SocialMediaItem href='https://twitter.com/lor_is'>
+        <Twitter/> 
+      </SocialMediaItem>
+      <SocialMediaItem href='linkedin.com'>
+        <Youtube/> 
+      </SocialMediaItem>
+      <SocialMediaItem href='linkedin.com'>
+        <Linkedin/> 
+      </SocialMediaItem>
+
     </SocialMediaGroup>
   </footer>
 )
