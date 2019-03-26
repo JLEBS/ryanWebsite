@@ -29,7 +29,7 @@ const WidthHeight = () => (
   // `height: 150px;
   // width: 150px;`
 
-  `width: 20vw; height: 20vh;`
+  `width: 10vw; height: 10vh;`
 );
 
 

@@ -10,14 +10,13 @@ const black = Colors.textColorSecondary;
 export const Heading = styled.h1
     `font-size: 100px;
     color: ${white};
-    text-shadow: 3px 3px ${black};
-    text-transform: uppercase;
+    // text-shadow: 3px 3px ${black};
     text-align: center;
     display: inline-block;
     ${fluidRange(
         {
           prop: 'font-size',
-          fromSize: '50px',
+          fromSize: '55px',
           toSize: '100px',
         },
         '400px',
@@ -36,7 +35,7 @@ export const Heading = styled.h1
         {
           prop: 'letter-spacing',
           fromSize: '0px',
-          toSize: '24px',
+          toSize: '10px',
         },
         '400px',
         '1000px',
@@ -46,10 +45,36 @@ export const Heading = styled.h1
 export const Subheading = styled.h2`
     font-size: 24px;
     color: ${white};
-    text-shadow: 1px 1px ${black};
-    text-transform: uppercase;
+    // text-shadow: 1px 1px ${black};
     text-align: center;
     display: inline-block;
+    ${fluidRange(
+      {
+        prop: 'font-size',
+        fromSize: '12px',
+        toSize: '24px',
+      },
+      '400px',
+      '1000px',
+    )}
+  ${fluidRange(
+      {
+        prop: 'line-height',
+        fromSize: '30px',
+        toSize: '60px',
+      },
+      '400px',
+      '1000px',
+    )}
+    ${fluidRange(
+      {
+        prop: 'letter-spacing',
+        fromSize: '0px',
+        toSize: '2.4px',
+      },
+      '400px',
+      '1000px',
+    )}
 `;
 
 export const Paragraph = styled.p`

@@ -9,17 +9,18 @@ export const SocialMediaGroup = styled.ul`
 
 export const SocialMediaItem = styled.a`
   ${props => `src=(${props.href});`}
-  outline: 1px solid grey;
 `
 
 export const ProfileImage = styled.div`
     background-image: url(${ryanrewind});
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
-    padding-top:20%;
-    width: 100%;
-    max-width: 18em;
+    // height: auto;
+    // padding-top:20%;
+    // width: 100%;
+    // max-width: 32em;
     border-radius: 50%;
+    height: 30vw;
+    width: 30vw;
 
 `
