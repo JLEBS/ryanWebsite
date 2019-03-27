@@ -11,22 +11,22 @@ export const SocialMediaItem = styled.a`
   ${props => `src=(${props.href});`}
 `
 
-export const VideoSource = styled.source`
-  ${props => `src=(${props.href});`}
-  ${props => `type=video/mp4;`}
-`
-
 //Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/
 
 export const Box = styled.div`
   width: 60vmin;
   height: 60vmin;
   position: relative;
-  margin-left: 10px;
+  margin-left: 80px;
+  padding-right: 70px;
+  @media(max-width: 1000px){
+    margin-left: none;
+    padding-right: none;
+  }
 `
 export const SpinContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   animation: spin 12s linear infinite;
   position: relative;
 `
@@ -45,11 +45,11 @@ export const Image = styled.div`
     background-image: url(${ryanrewind});
     background-repeat: no-repeat;
     background-size: cover;
-    width: 115%;
-    height: 115%;
+    width: 142%;
+    height: 142%;
     position: absolute;
-    left: -10%;
-    top: -10%;
+    left: -21%;
+    top: -21%;
 
     animation: spin 12s linear infinite reverse;
 

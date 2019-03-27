@@ -47,7 +47,7 @@ export const SectionTwo = () => (
     <Subsection secondary>
         <Container>
             <FlexRow>
-                
+            {/* Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/ */}
                 <ProfileImage></ProfileImage>
             
                 <FlexColumn>
@@ -56,7 +56,7 @@ export const SectionTwo = () => (
                     </Heading>
 
                     <Subheading>
-                        //Creative Producer for Audio and Video.
+                        Creative Audio and Video Producer
                     </Subheading> 
                     <Subheading>
                         ryancallardmusic@gmail.com
