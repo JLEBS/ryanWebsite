@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <polygon cx="113" cy="344.5" edge="247.293797" fill="#d72638" id="svg_10" orient="x" points="-4.922183990478516,449.7691345214844 645.2833862304688,508.71160888671875 645.2833862304688,390.8266296386719 -4.922183990478516,449.7691345214844 " shape="regularPoly" sides="3" stroke-width="0" strokeWidth="0" strokecolor="none" transform="rotate(-5.17602 320.181 449.769)"/>
+  <path d="m-22.160783,424.186825c668.992904,-38.070176 668.992904,-38.614036 668.992904,-38.885965c0,-0.27193 6.331163,-23.114035 4.220775,-23.114035c-2.110388,0 -662.661741,39.157895 -662.661741,38.885965" fill="#d72638" id="svg_17" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" transform="rotate(-7.07304 314.661 393.187)"/>
+ </g>
+</svg>

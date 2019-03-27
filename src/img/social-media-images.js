@@ -24,6 +24,13 @@ const PathHover = () => (
 );
 
 
+export const RedLine = () => (
+  <StyledLine viewBox="0 0 1920 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 171L1920 0V171H0Z" fill="#D72638"/>
+  </StyledLine>
+);
+
+
 export const Linkedin = () => (
   <StyledLinkedin viewBox="0 0 32 32" id="linkedin">
     <path 
@@ -51,6 +58,27 @@ export const Youtube = () => (
     </path>         
   </StyledYoutube>
 );
+
+
+const StyledLine = styled.svg`
+
+
+    transform: rotate(180deg);
+    animation: 4s infinite rotate;
+
+ @keyframes rotate {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+
+  
+    }
+
+`;
 
 
 const StyledLinkedin = styled.svg`

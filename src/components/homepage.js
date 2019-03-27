@@ -2,7 +2,7 @@ import React from 'react';
 import { Reset } from 'styled-reset';
 import { Wrapper, Container } from './wrapper';
 import {Source, Video, VideoContainer } from './video';
-import {SectionOne, SectionTwo, SectionMiddle} from './section';
+import {SectionOne, SectionOneRectangle, SectionTwo, SectionMiddle} from './section';
 import Title from './title';
 import videoMain from '../img/videoMain.mp4';
 
@@ -12,13 +12,13 @@ const HomePage = () => (
         <Reset/> 
         <VideoContainer>
         <Title/>
-            <Video autoplay>
+            <Video autoPlay muted loop>
                 <Source src={videoMain} type='video/mp4'/>
             </Video>
         
         </VideoContainer>
        
-
+<SectionOneRectangle reverted/>
         <SectionOne/>
 
         <SectionMiddle/>

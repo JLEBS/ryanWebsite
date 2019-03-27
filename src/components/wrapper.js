@@ -13,6 +13,10 @@ const Container = styled.div`
     margin: 0 auto;
 `;
 
+const FixedContainer = styled.div`
+    position: fixed;
+`
+
 const FlexColumn = styled.div`
     display:flex;
     flex-direction:column;
@@ -33,4 +37,4 @@ const FlexRow = styled.div`
 
 `
 
-export { Wrapper, Container, FlexColumn, FlexRow};
+export { Wrapper, Container, FlexColumn, FlexRow, FixedContainer};

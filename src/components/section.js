@@ -5,9 +5,17 @@ import Footer from './footer';
 import { Heading, Subheading, Paragraph, Bold } from './text';
 import { FlexColumn, FlexRow, Container } from './wrapper'; 
 import IconContainer from './video-selector';
+import {RedLine} from '../img/social-media-images.js';
+
+export const SectionOneRectangle = () =>(
+
+
+    <RedLine/>
+)
 
 export const SectionOne = () => (
     <Subsection>
+         
         <Container>
             <FlexColumn>
                 <Paragraph>
@@ -44,6 +52,8 @@ export const SectionMiddle = () => (
 );
 
 export const SectionTwo = () => (
+
+
     <Subsection secondary>
         <Container>
             <FlexRow>

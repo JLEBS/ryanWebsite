@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heading, Subheading } from './text';
 import Footer from './footer';
-import {FlexColumn, Container} from './wrapper';
+import {FlexColumn, Container, FixedContainer} from './wrapper';
 
 const Title = () => (
     <Container>
