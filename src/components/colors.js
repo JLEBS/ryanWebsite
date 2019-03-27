@@ -7,6 +7,7 @@ const Colors = {
     subSectionTwo : '#3F88C5',
     linkHover : '#140F2D',
     linkHoverLight : '#292440',
+    videoBackground : '#D72638',
     $color1: '#D72638',//Rose
     $color2: '#3F88C5',//Blue
     $color3: '#F49D37',//beige

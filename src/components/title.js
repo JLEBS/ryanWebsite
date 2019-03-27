@@ -1,14 +1,16 @@
 import React from 'react';
 import { Heading, Subheading } from './text';
 import Footer from './footer';
-import {FlexColumn} from './wrapper';
+import {FlexColumn, Container} from './wrapper';
 
 const Title = () => (
-    <FlexColumn>
-        <Heading>Ryan Callard</Heading>
-        <Subheading>Creative Producer for Audio and Video content.</Subheading>
-        <Footer></Footer>
-    </FlexColumn>
+    <Container>
+        <FlexColumn>
+            <Heading>RYAN CALLARD</Heading>
+            <Subheading>Creative Producer for Audio and Video content.</Subheading>
+            <Footer></Footer>
+        </FlexColumn>
+    </Container>
 )
 
 export default Title;

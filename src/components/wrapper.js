@@ -1,7 +1,6 @@
 import styled, {css} from 'styled-components';
 
 const Wrapper = styled.div`
-    background-color: grey;
     font-family: 'Montserrat', sans-serif;
 `;
 

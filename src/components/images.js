@@ -11,6 +11,11 @@ export const SocialMediaItem = styled.a`
   ${props => `src=(${props.href});`}
 `
 
+export const VideoSource = styled.source`
+  ${props => `src=(${props.href});`}
+  ${props => `type=video/mp4;`}
+`
+
 //Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/
 
 export const Box = styled.div`
