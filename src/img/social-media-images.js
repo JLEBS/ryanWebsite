@@ -26,10 +26,10 @@ const PathHover = () => (
 );
 
 export const Line = ({
-  rotate, color
+  rotation, alternativeColor, newClassName
 }) => (
-  <StyledLine viewBox="0 0 1920 171" fill="none" xmlns="http://www.w3.org/2000/svg" color={color} rotate={rotate}>
-    <path id='line-path' d="M0 171L1920 0V171H0Z" />
+  <StyledLine viewBox="0 0 1920 171" fill="none" xmlns="http://www.w3.org/2000/svg"  alternativeColor={alternativeColor} rotation={rotation}>
+    <path className={newClassName} className='line-path' d="M0 171L1920 0V171H0Z" />
   </StyledLine>
 );
 
@@ -66,23 +66,22 @@ const StyledLine = styled.svg`
   position: relative;
   top: 3px;
 
-  & #line-path{
+  & .line-path{
     animation: ${colorWipeLine} 15s ease infinite;
   }
 
   //For blue section
-  ${props => props.color && css`
+  ${props => props.alternativeColor && css`
     stroke: blue;
-    fill: green;
-
-    & #line-path{
-      animation: ${colorWipeLine} none;
+    
+    & .testing{
+      stroke: green;
       animation: ${colorWipeLineReverse} 15s ease infinite;
     }
   `}
 
   //For rotated version
-  ${props => props.rotate && css`
+  ${props => props.rotation && css`
     top:-1px
     transform: rotate(180deg);
   `}

@@ -40,11 +40,11 @@ export const SectionOne = () => (
 
 export const SectionMiddle = () => ( 
     <Subsection neutral>
-        <Line rotate/>
+        <Line rotation/>
         <Container neutral> 
             <IconContainer></IconContainer>
         </Container>
-        <Line color/>
+        <Line alternativeColor newClassName='.testing'/>
     </Subsection>
 );
 
