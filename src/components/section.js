@@ -2,7 +2,7 @@ import React from 'react';
 import Subsection from './subsection';
 import { ProfileImage } from './profile-image';
 import Footer from './footer';
-import { Heading, Subheading, Paragraph, Bold } from './text';
+import { Heading, Subheading, Paragraph, Bold, WayPointParagraph } from './text';
 import { FlexColumn, FlexRow, Container } from './wrapper'; 
 import IconContainer from './video-selector';
 import {Line} from '../img/social-media-images.js';

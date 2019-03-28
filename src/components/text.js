@@ -1,6 +1,10 @@
 import styled, {css} from 'styled-components';
 import Colors from './colors';
-import { fluidRange } from 'polished'
+import { fluidRange } from 'polished';
+
+
+import React from 'react';
+import { Waypoint } from 'react-waypoint';
 
 const white = Colors.textColorPrimary;
 const black = Colors.textColorSecondary;
@@ -8,7 +12,7 @@ const black = Colors.textColorSecondary;
 export const Heading = styled.h1
     `font-size: 100px;
     color: ${white};
-    // text-shadow: 3px 3px ${black};
+    text-shadow: 5px 5px ${black};
     text-align: center;
     display: inline-block;
     ${fluidRange(
@@ -43,14 +47,14 @@ export const Heading = styled.h1
 export const Subheading = styled.h2`
     font-size: 24px;
     color: ${white};
-    // text-shadow: 1px 1px ${black};
+    text-shadow: 2.5px 2.5px ${black};
     text-align: center;
     display: inline-block;
     ${fluidRange(
       {
         prop: 'font-size',
-        fromSize: '12px',
-        toSize: '24px',
+        fromSize: '15px',
+        toSize: '30px',
       },
       '400px',
       '1500px',
@@ -74,6 +78,15 @@ export const Subheading = styled.h2`
       '1500px',
     )}
 `;
+
+export const WayPointParagraph = () => (
+  <Waypoint 
+      onEnter={console.log('enter')}
+      onLeave={console.log('leave')}
+  >
+    <Paragraph></Paragraph>
+  </Waypoint>
+);
 
 export const Paragraph = styled.p`
     font-size: 24px;
