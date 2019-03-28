@@ -72,11 +72,13 @@ const StyledLine = styled.svg`
 
   //For blue section
   ${props => props.color && css`
+    stroke: blue;
+    fill: green;
 
-  fill: grey;
-    // & #line-path{
-    //   animation: ${colorWipeLineReverse} 15s ease infinite;
-    // }
+    & #line-path{
+      animation: ${colorWipeLine} none;
+      animation: ${colorWipeLineReverse} 15s ease infinite;
+    }
   `}
 
   //For rotated version
@@ -84,7 +86,6 @@ const StyledLine = styled.svg`
     top:-1px
     transform: rotate(180deg);
   `}
-
 
 `;
 
