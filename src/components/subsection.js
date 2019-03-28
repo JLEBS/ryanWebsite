@@ -1,25 +1,13 @@
-import styled, {css} from 'styled-components';
-import Colors from './colors';
+import styled, {css, keyframes} from 'styled-components';
+import {colorWipe, colorWipeReverse} from './animation';
 
 //Styling for each subsection
 const Subsection = styled.div`
-
-    background-color: ${Colors.subSectionOne};
     width: 100%;
-    padding-top:5rem;
-    padding-bottom:5rem;
-
-    & after
-        content: 'sdfsdf';
-    ${props => props.secondary && css`
-        background-color: ${Colors.subSectionTwo};
-    
-    `}
+    position: relative;
 
     ${props => props.neutral && css`
-        background-color: white;
-
-    `}
+    background-color: white;
+ `}
 `
-
 export default Subsection;

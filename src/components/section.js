@@ -5,18 +5,13 @@ import Footer from './footer';
 import { Heading, Subheading, Paragraph, Bold } from './text';
 import { FlexColumn, FlexRow, Container } from './wrapper'; 
 import IconContainer from './video-selector';
-import {RedLine} from '../img/social-media-images.js';
+import {Line} from '../img/social-media-images.js';
 
-export const SectionOneRectangle = () =>(
-
-
-    <RedLine/>
-)
 
 export const SectionOne = () => (
     <Subsection>
-         
-        <Container>
+        <Line/>
+        <Container primary>
             <FlexColumn>
                 <Paragraph>
                     <Bold href={'https://www.linkedin.com/in/ryan-callard-682a38130'}>Ryan Callard</Bold> is a British audio visual professional working with independent companies to create high-impact video content for social media platforms including <Bold href='https://www.youtube.com/channel/UCIb7HfJ65qLsxP6w2yvo0rw'>YouTube</Bold> and <Bold href='https://www.twitch.tv/lor_is'>Twitch</Bold>.
@@ -45,17 +40,19 @@ export const SectionOne = () => (
 
 export const SectionMiddle = () => ( 
     <Subsection neutral>
-        <Container> 
+        <Line rotate/>
+        <Container neutral> 
             <IconContainer></IconContainer>
         </Container>
+        <Line color/>
     </Subsection>
 );
 
 export const SectionTwo = () => (
 
 
-    <Subsection secondary>
-        <Container>
+    <Subsection>
+        <Container secondary>
             <FlexRow>
             {/* Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/ */}
                 <ProfileImage></ProfileImage>

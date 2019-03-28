@@ -30,16 +30,4 @@ export const VideoContainer = styled.div`
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    
-    & ::after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background: ${Colors.videoBackground};
-        opacity:0.05;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
     `

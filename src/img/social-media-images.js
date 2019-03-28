@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
+import Colors from '../components/colors';
+import {colorWipeLine, colorWipeLineReverse} from '../components/animation';
 
 const WidthHeight = () => (
   `width: 10vw; height: 10vh;`
@@ -23,13 +25,13 @@ const PathHover = () => (
   `
 );
 
-
-export const RedLine = () => (
-  <StyledLine viewBox="0 0 1920 171" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 171L1920 0V171H0Z" fill="#D72638"/>
+export const Line = ({
+  rotate, color
+}) => (
+  <StyledLine viewBox="0 0 1920 171" fill="none" xmlns="http://www.w3.org/2000/svg" color={color} rotate={rotate}>
+    <path id='line-path' d="M0 171L1920 0V171H0Z" />
   </StyledLine>
 );
-
 
 export const Linkedin = () => (
   <StyledLinkedin viewBox="0 0 32 32" id="linkedin">
@@ -39,7 +41,6 @@ export const Linkedin = () => (
     </path>         
   </StyledLinkedin>
 );
-
 
 export const Twitter = () => (
   <StyledTwitter viewBox="0 0 24 20" id="twitter">
@@ -62,24 +63,30 @@ export const Youtube = () => (
 
 const StyledLine = styled.svg`
 
+  position: relative;
+  top: 3px;
 
+  & #line-path{
+    animation: ${colorWipeLine} 15s ease infinite;
+  }
+
+  //For blue section
+  ${props => props.color && css`
+
+  fill: grey;
+    // & #line-path{
+    //   animation: ${colorWipeLineReverse} 15s ease infinite;
+    // }
+  `}
+
+  //For rotated version
+  ${props => props.rotate && css`
+    top:-1px
     transform: rotate(180deg);
-    animation: 4s infinite rotate;
+  `}
 
- @keyframes rotate {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-
-  
-    }
 
 `;
-
 
 const StyledLinkedin = styled.svg`
   ${WidthHeight()};
