@@ -7,16 +7,25 @@ import toth from '../img/toth.png';
 import readyup from '../img/readyup.png';
 import {IconGroup, IconItem} from './icon.js';
 
+const result = '';
 const readyupVid = '7DEvC47tvKc';
 const tothVid = 'YiKfsioPpDY';
 const hugsVid = 'v4y8tHE83HE';
 const drumshackVid = 'ENC_jxNfvLc';
 const darylVid = 'rtu_EqjtHmQ';
 
+function handleClick(e) {
+    e.preventDefault();
+    console.log('The link was clicked.');
+
+ 
+  }
+
+
 const IconContainer = () => (
     <div>
         <IconGroup>
-            <IconItem data-atr={readyupVid} imageUrl={readyup}></IconItem>
+            <IconItem onClick={handleClick} data-atr={readyupVid} imageUrl={readyup}></IconItem>
             <IconItem data-atr={hugsVid} imageUrl={hugs}></IconItem>
             <IconItem data-atr={tothVid} imageUrl={toth}></IconItem>
             <IconItem data-atr={drumshackVid} imageUrl={drumshack}></IconItem>
@@ -26,7 +35,6 @@ const IconContainer = () => (
         <VideoPlayer/>
     </div>
 );
-
 
 class VideoPlayer extends React.Component {
     render() {
@@ -40,7 +48,7 @@ class VideoPlayer extends React.Component {
   
       return (
         <YouTube
-          videoId={hugsVid}
+          videoId={result}
           opts={opts}
           onReady={this._onReady}
         />
