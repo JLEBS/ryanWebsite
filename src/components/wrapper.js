@@ -6,7 +6,6 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    // max-width: 1480px;
     padding-left:1.6rem;
     padding-right:1.6rem;
     padding-top:4rem;
@@ -25,6 +24,11 @@ const Container = styled.div`
        background-color: white;
     `}
 `;
+
+const MaxWidthContainer = styled.div`
+    max-width: 1480px;
+    margin: 0 auto;
+`
 
 const FixedContainer = styled.div`
     position: fixed;
@@ -47,4 +51,4 @@ const FlexRow = styled.div`
     }
 `
 
-export { Wrapper, Container, FlexColumn, FlexRow, FixedContainer};
+export { Wrapper, Container, FlexColumn, FlexRow, FixedContainer, MaxWidthContainer};

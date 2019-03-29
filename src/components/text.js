@@ -1,20 +1,24 @@
 import styled, {css} from 'styled-components';
 import Colors from './colors';
 import { fluidRange } from 'polished';
-
-
 import React from 'react';
 import { Waypoint } from 'react-waypoint';
 
 const white = Colors.textColorPrimary;
 const black = Colors.textColorSecondary;
 
+
+const TextColorChange = (textColor) => (`
+  ${textColor == 'light' ? 'color: white; text-shadow: 5px 5px black;' : 'color: black; text-shadow: none;'}
+`
+);
+
 export const Heading = styled.h1
     `font-size: 100px;
-    color: ${white};
-    text-shadow: 5px 5px ${black};
+    ${TextColorChange('light')}
     text-align: center;
     display: inline-block;
+
     ${fluidRange(
         {
           prop: 'font-size',
@@ -95,6 +99,7 @@ export const Paragraph = styled.p`
     text-align: center;
     margin:12px;
     color: ${Colors.textColorPrimary};
+
     ${fluidRange(
         {
           prop: 'font-size',
@@ -131,6 +136,39 @@ export const Paragraph = styled.p`
         '400px',
         '1500px',
       )}
+
+      ${props => props.darkFont && css`
+      ${TextColorChange('dark')}
+      margin: unset;
+
+        ${fluidRange(
+          {
+            prop: 'font-size',
+            fromSize: '12px',
+            toSize: '18px',
+          },
+          '400px',
+          '1500px',
+        )}
+        ${fluidRange(
+          {
+            prop: 'line-height',
+            fromSize: '16px',
+            toSize: '24px',
+          },
+          '400px',
+          '1500px',
+        )}
+        ${fluidRange(
+          {
+            prop: 'letter-spacing',
+            fromSize: '1px',
+            toSize: '2px',
+          },
+          '400px',
+          '1500px',
+        )}
+    `}
 `;
 
 export const Bold = styled.a.attrs({

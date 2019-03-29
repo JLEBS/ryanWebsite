@@ -8,6 +8,13 @@ export const IconGroup = styled.ul`
     list-style: none;
     justify-content: space-between;`
 
+export const IconDescription = styled.div`
+    display: flex;
+    list-style: none;
+    flex-direction: column
+
+    `
+    
 
 export const IconItem = styled.div`
     ${props => `background-image: url(${props.imageUrl});`}

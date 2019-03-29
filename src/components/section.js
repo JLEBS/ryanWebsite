@@ -3,8 +3,8 @@ import Subsection from './subsection';
 import { ProfileImage } from './profile-image';
 import Footer from './footer';
 import { Heading, Subheading, Paragraph, Bold, WayPointParagraph } from './text';
-import { FlexColumn, FlexRow, Container } from './wrapper'; 
-import IconContainer from './video-selector';
+import { FlexColumn, FlexRow, Container, MaxWidthContainer } from './wrapper'; 
+import {videos, IconContainer} from './video-selector';
 import {Line} from '../img/social-media-images.js';
 
 export const SectionOne = () => (
@@ -39,8 +39,11 @@ export const SectionOne = () => (
 export const SectionMiddle = () => ( 
     <Subsection neutral>
         <Line rotation/>
-        <Container neutral> 
-            <IconContainer></IconContainer>
+        <Container  neutral> 
+            <IconContainer videos={videos}>
+
+           
+            </IconContainer>
         </Container>
         <Line alternativeColor/>
     </Subsection>
