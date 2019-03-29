@@ -10,6 +10,7 @@ const Colors = {
     linkHover : '#a29eb9',
     linkHoverLight : '#292440',
     videoBackground : '#D72638',
+    glow : 'rgb(255,223,0, ',
     $color1 : '#D72638',//Rose
     $color2 : '#3F88C5',//Blue
     $color3 : '#F49D37',//beige

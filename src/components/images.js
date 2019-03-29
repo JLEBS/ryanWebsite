@@ -19,9 +19,10 @@ export const Box = styled.div`
   position: relative;
   margin-left: 80px;
   padding-right: 70px;
-  @media(max-width: 1000px){
-    margin-left: none;
-    padding-right: none;
+
+  @media (max-width: 1000px){
+    margin-left: 0px;
+    padding-right:0px;
   }
 `
 export const SpinContainer = styled.div`

@@ -7,7 +7,6 @@ import { FlexColumn, FlexRow, Container } from './wrapper';
 import IconContainer from './video-selector';
 import {Line} from '../img/social-media-images.js';
 
-
 export const SectionOne = () => (
     <Subsection>
         <Line/>
@@ -37,19 +36,17 @@ export const SectionOne = () => (
     </Subsection>
 )
 
-
 export const SectionMiddle = () => ( 
     <Subsection neutral>
         <Line rotation/>
         <Container neutral> 
             <IconContainer></IconContainer>
         </Container>
-        <Line alternativeColor newClassName='.testing'/>
+        <Line alternativeColor/>
     </Subsection>
 );
 
 export const SectionTwo = () => (
-
 
     <Subsection>
         <Container secondary>

@@ -4,7 +4,7 @@ import Colors from '../components/colors';
 import {colorWipeLine, colorWipeLineReverse} from '../components/animation';
 
 const WidthHeight = () => (
-  `width: 10vw; height: 10vh;`
+  `width: 100px; height: 100px;`
 );
 
 const PathStatic = () => (
@@ -26,10 +26,10 @@ const PathHover = () => (
 );
 
 export const Line = ({
-  rotation, alternativeColor, newClassName
+  rotation, alternativeColor
 }) => (
   <StyledLine viewBox="0 0 1920 171" fill="none" xmlns="http://www.w3.org/2000/svg"  alternativeColor={alternativeColor} rotation={rotation}>
-    <path className={newClassName} className='line-path' d="M0 171L1920 0V171H0Z" />
+    <path className='line-path' d="M0 171L1920 0V171H0Z" />
   </StyledLine>
 );
 
@@ -72,12 +72,15 @@ const StyledLine = styled.svg`
 
   //For blue section
   ${props => props.alternativeColor && css`
-    stroke: blue;
     
-    & .testing{
-      stroke: green;
+    stroke: green;
+    
+    animation: ${colorWipeLineReverse} 15s ease infinite;
+
+    & .line-path{
       animation: ${colorWipeLineReverse} 15s ease infinite;
     }
+
   `}
 
   //For rotated version
