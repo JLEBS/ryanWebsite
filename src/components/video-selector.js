@@ -5,16 +5,17 @@ import guitar from '../img/guitar.png';
 import hugs from '../img/hugs.png';
 import toth from '../img/toth.png';
 import readyup from '../img/readyup.png';
-import {IconGroup, IconItem, IconDescription} from './icon.js';
+import {VideoContainer, IconGroup, IconItem, IconDescription} from './icon.js';
 import {Paragraph, Bold, Subheading} from './text.js';
 import {FlexRow, MaxWidthContainer} from './wrapper.js';
+import { isAbsolute } from 'path';
 
 export const videos = [
     {
         id : '7DEvC47tvKc', 
         image : readyup, 
         heading : 'Editor',
-        description : `Ready Up: Competitive Team Fortress 2 is a documentary produced by Alex "Dashner" Pylyshyn and Ness "Uberchain" Delacroix, and co-edited by Ryan "loris" Callard. Ready Up: Competitive Team Fortress 2 is a behind-the-scenes narrative of the competitive Team Fortress 2 esports scene, which has maintained a community of pro players, viewers, and talent for over a decade. You can see the update log to Ready Up: Competitive Team Fortress 2 on Team Fortress TV.`
+        description : () => <p>Ready Up: Competitive Team Fortress 2 is a documentary produced by Alex "Dashner" Pylyshyn and Ness "Uberchain" Delacroix, and co-edited by Ryan "loris" Callard. Ready Up: Competitive Team Fortress 2 is a behind-the-scenes narrative of the competitive Team Fortress 2 esports scene, which has maintained a community of pro players, viewers, and talent for over a decade. You can see the update log to Ready Up: Competitive Team Fortress 2 on Team Fortress TV.</p>
     },
     {
         id : 'YiKfsioPpDY',
@@ -41,7 +42,7 @@ export const videos = [
         heading : 'Audio Producer and Videographer',
         description : `Daryl Kellie is a West London based fingerstyle guitar player. His book features a number of the techniques that he has become well known for, and we created some performance, lesson, and promotional material for its release. The book is being released through Fundamental Changes later in 2019. To see more from Daryl Kellie, visit his site.`
     }
-]
+];
 
 export const IconContainer = ({ videos }) => {
     const [videoIndex, setVideoIndex] = useState(0)
@@ -56,55 +57,16 @@ export const IconContainer = ({ videos }) => {
         </IconGroup>
         
         <FlexRow>
-            <YouTube videoId={video.id} />
+            <VideoContainer>
+                <YouTube videoId={video.id} />
+            </VideoContainer>
 
             <IconDescription>
                 <Subheading>{video.heading}</Subheading>
                 <Paragraph darkFont>{video.description}</Paragraph>
+                {video.description}
             </IconDescription>
         </FlexRow>
       </MaxWidthContainer>
     )
   }
-
-  //const rootElement = document.getElementById('#iconContainer')
-  //ReactDOM.render(<App videoIds={videoIds} />, rootElement)
-
-
-
-// const blar = () => (
-//     <div>
-//         <IconGroup>
-//             <IconItem onClick={handleClick} data={readyupVid} imageUrl={readyup}></IconItem>
-//             <IconItem data={hugsVid} imageUrl={hugs}></IconItem>
-//             <IconItem data={tothVid} imageUrl={toth}></IconItem>
-//             <IconItem data={drumshackVid} imageUrl={drumshack}></IconItem>
-//             <IconItem data={darylVid} imageUrl={guitar}></IconItem>
-//         </IconGroup>
-
-//         <VideoPlayer/>
-//     </div>
-// );
-
-// class VideoPlayer extends React.Component {
-//     render() {
-//       const opts = {
-//         height: '390',
-//         width: '640',
-
-//       };
-  
-//       return (
-//         <YouTube
-//           videoId={}
-//           opts={opts}
-//           onReady={this._onReady}
-//         />
-//       );
-//     }
-  
-//     _onReady(event) {
-//       event.target.pauseVideo();
-//     }
-//   }
-

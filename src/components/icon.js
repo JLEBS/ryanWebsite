@@ -1,19 +1,54 @@
 import styled, {css} from 'styled-components';
 import Colors from './colors';
+import { fluidRange } from 'polished';
 
 const glow = Colors.glow;
+
+export const VideoContainer = styled.div`
+    
+    outline: 2px solid red;
+    position: relative;
+    padding-bottom: 26.25%;
+    padding-top: 25px;
+    height: 0;
+    flex: 1;
+
+    @media (max-width: 1000px){
+
+      width: 100%;
+      padding-bottom: 53.25%;
+    }
+    
+    & iframe {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      outline: 1px solid green;
+    }`;
 
 export const IconGroup = styled.ul`
     display: flex;
     list-style: none;
-    justify-content: space-between;`
+    justify-content: space-between;
+    
+    ${fluidRange(
+      {
+        prop: 'padding-bottom',
+        fromSize: '50px',
+        toSize: '200px',
+      },
+      '400px',
+      '1500px',
+    )}`
 
 export const IconDescription = styled.div`
     display: flex;
     list-style: none;
-    flex-direction: column
-
-    `
+    flex-direction: column;
+    flex: 1;`
     
 
 export const IconItem = styled.div`
