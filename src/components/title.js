@@ -6,8 +6,8 @@ import {FlexColumn, Container, FixedContainer} from './wrapper';
 const Title = () => (
     <Container>
         <FlexColumn>
-            <Heading>RYAN CALLARD</Heading>
-            <Subheading>Creative Producer for Audio and Video content.</Subheading>
+            <Heading shadow>RYAN CALLARD</Heading>
+            <Subheading shadow>Creative Producer for Audio and Video content.</Subheading>
             <Footer></Footer>
         </FlexColumn>
     </Container>

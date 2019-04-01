@@ -5,11 +5,13 @@ import {Source, Video, VideoContainer } from './video';
 import {SectionOne, SectionTwo, SectionMiddle} from './section';
 import Title from './title';
 import videoMain from '../img/videoMain.mp4';
+import Header from './header';
 
 
 const HomePage = () => (
     <Wrapper>
-        <Reset/> 
+        <Reset/>
+        <Header/> 
         <VideoContainer>
         <Title/>
             <Video autoPlay muted loop>

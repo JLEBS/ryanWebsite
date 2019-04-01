@@ -49,3 +49,15 @@ export const colorWipeLineReverse = keyframes`
         background-color: ${Colors.subSectionTwo};
     }
 `
+
+export const VideoSlide = keyframes`
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7
+    }
+    100% {
+        opacity: 1;
+    }
+`

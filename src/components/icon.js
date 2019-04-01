@@ -6,9 +6,8 @@ const glow = Colors.glow;
 
 export const VideoContainer = styled.div`
     
-    outline: 2px solid red;
     position: relative;
-    padding-bottom: 26.25%;
+    padding-bottom: 25%;
     padding-top: 25px;
     height: 0;
     flex: 1;
@@ -16,7 +15,18 @@ export const VideoContainer = styled.div`
     @media (max-width: 1000px){
 
       width: 100%;
-      padding-bottom: 53.25%;
+      padding-bottom: 50%;
+
+      ${fluidRange(
+        {
+          prop: 'margin-bottom',
+          fromSize: '25px',
+          toSize: '65px',
+        },
+        '400px',
+        '1000px',
+      )}
+
     }
     
     & iframe {
@@ -26,7 +36,6 @@ export const VideoContainer = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      outline: 1px solid green;
     }`;
 
 export const IconGroup = styled.ul`
@@ -53,7 +62,7 @@ export const IconDescription = styled.div`
 
 export const IconItem = styled.div`
     ${props => `background-image: url(${props.imageUrl});`}
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
     // background-position: center;
  
     // max-width: 49px;
@@ -65,19 +74,15 @@ export const IconItem = styled.div`
     // border-radius: 50%;
     
     object-fit:cover;
-    width:100px;
-    height:100px;
     border-radius: 50%;
-
     cursor: pointer;
     background-size: 100%;
     opacity: 0.5;
     height:100px;
     width:100px;
 
-
     @media(max-width: 1000px){
-      height:58px;
+      height:75px;
       width: 75px;
     }
 

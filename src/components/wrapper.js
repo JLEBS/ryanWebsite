@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {colorWipe, colorWipeReverse} from './animation';
+import {colorWipe, colorWipeReverse, VideoSlide} from './animation';
 
 const Wrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
@@ -11,6 +11,11 @@ const Container = styled.div`
     padding-top:4rem;
     padding-bottom:4rem;
     margin: 0 auto;
+
+    ${props => props.header && css`
+       padding-top: unset;
+       padding-bottom: unset;
+    `}
 
     ${props => props.primary && css`
         animation: ${colorWipe} 15s ease infinite;
@@ -44,11 +49,12 @@ const FlexRow = styled.div`
     display:flex;
     flex-direction: row;
     justify-content: space-evenly; 
-
+    align-items:center;
 
     @media (max-width: 1000px) {
         flex-direction: column;
     }
+
 `
 
 export { Wrapper, Container, FlexColumn, FlexRow, FixedContainer, MaxWidthContainer};
