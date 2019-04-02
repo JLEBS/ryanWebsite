@@ -2,28 +2,12 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import Colors from '../components/colors';
 import {colorWipeLine, colorWipeLineReverse} from '../components/animation';
-import {fluidRange} from 'polished';
+import { fluidRange } from 'polished';
 
 const WidthHeight = () => (
-  `width: 100px; height: 100px;`
+  ``
 );
 
-const PathStatic = () => (
-  `fill: black;
-  opacity: 0.5;
-  stroke: lightgrey;
-  `
-);
-
-const PathHover = () => (
-  `opacity: 1;
-  border-radius: 100%
-  color: green;
-  fill: green;
-  transform: scale(1.25)
-  transition: background-color .5s, transform .5s ease-out
-  `
-);
 
 export const Line = ({
   rotation, alternativeColor
@@ -152,35 +136,14 @@ const StyledLine = styled.svg`
 
 const StyledLinkedin = styled.svg`
   ${WidthHeight()};
-
-  & #linkedin-path{
-    ${PathStatic()};
-  } 
-  & #linkedin-path:hover {
-    ${PathHover()};
-  }
 `;
 
 const StyledTwitter = styled.svg`
   ${WidthHeight()};
-
-  & #twitter-path{
-    ${PathStatic()};
-  } 
-  & #twitter-path:hover {
-   ${PathHover()};
-  }
 `;
 
 const StyledYoutube = styled.svg`
   ${WidthHeight()};
-
-  & #youtube-path{
-    ${PathStatic()};
-  } 
-  & #youtube-path:hover {
-    ${PathHover()};
-  }
 `;
 
 

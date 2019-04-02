@@ -6,7 +6,7 @@ import { Waypoint } from 'react-waypoint';
 
 const light = Colors.light;
 const dark = Colors.dark;
-let backgroundColor = 'green';
+let backgroundColor = '';
 
 const TextColorChange = (textColor) => (`
   ${textColor == 'light' ? `color: ${light}` : `color: ${dark}; text-shadow: none;`}

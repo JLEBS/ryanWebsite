@@ -1,14 +1,48 @@
 import ryanrewind from '../img/ryanrewind.jpg'
 import styled, {css} from 'styled-components';
-
+import { fluidRange } from 'polished';
 export const SocialMediaGroup = styled.ul`
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+  padding: 1rem;
 `
 
 export const SocialMediaItem = styled.a`
   ${props => `src=(${props.href});`}
+  fill: white;
+  height: 5rem;
+  width: 5rem;
+
+  ${fluidRange(
+    {
+      prop: 'height',
+      fromSize: '50px',
+      toSize: '150px',
+    },
+    '400px',
+    '1500px',
+  )}
+
+  ${fluidRange(
+    {
+      prop: 'width',
+      fromSize: '50px',
+      toSize: '150px',
+    },
+    '400px',
+    '1500px',
+  )}
+
+  &:hover {
+    background: white;
+    border-radius: 100%;
+    color: black;
+    fill: black;
+    transform: scale(1.15);
+    transition: background-color .5s, transform .5s ease-out;
+  }
+
 `
 
 //Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/

@@ -365,4 +365,7 @@ textarea {
     padding: 0.2em 0;
 }
 
- @leandroruel
+a:active, a:focus {
+
+    outline: none;
+}
