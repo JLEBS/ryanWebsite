@@ -7,7 +7,7 @@ const Title = () => (
     <Container>
         <FlexColumn>
             <Heading shadow>RYAN CALLARD</Heading>
-            <Subheading shadow>Creative Producer for Audio and Video content.</Subheading>
+            <Subheading lineHeight shadow>Creative Producer for Audio and Video content.</Subheading>
             <Footer></Footer>
         </FlexColumn>
     </Container>

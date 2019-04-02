@@ -15,7 +15,7 @@ export const VideoContainer = styled.div`
     @media (max-width: 1000px){
 
       width: 100%;
-      padding-bottom: 50%;
+      padding-bottom: 49%;
 
       ${fluidRange(
         {
@@ -26,16 +26,16 @@ export const VideoContainer = styled.div`
         '400px',
         '1000px',
       )}
-
     }
     
     & iframe {
-
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      //pointer-events: none;
+      overflow: none;
     }`;
 
 export const IconGroup = styled.ul`
@@ -57,9 +57,13 @@ export const IconDescription = styled.div`
     display: flex;
     list-style: none;
     flex-direction: column;
-    flex: 1;`
+    flex: 1;
+    min-height: 360px;
     
-
+    @media(max-height: 1000px){
+      min-height: unset;
+    }`
+    
 export const IconItem = styled.div`
     ${props => `background-image: url(${props.imageUrl});`}
     background-repeat: no-repeat;

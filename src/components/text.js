@@ -68,15 +68,7 @@ export const Subheading = styled.h2`
       '400px',
       '1500px',
     )}
-  ${fluidRange(
-      {
-        prop: 'line-height',
-        fromSize: '30px',
-        toSize: '60px',
-      },
-      '400px',
-      '1500px',
-    )}
+
     ${fluidRange(
       {
         prop: 'letter-spacing',
@@ -87,8 +79,20 @@ export const Subheading = styled.h2`
       '1500px',
     )}
 
-    ${props => props.darkFont && css`
+  ${props => props.darkFont && css`
       ${TextColorChange('dark')}
+  `}
+
+  ${props => props.lineHeight && css`
+  ${fluidRange(
+    {
+      prop: 'line-height',
+      fromSize: '30px',
+      toSize: '60px',
+    },
+    '400px',
+    '1500px',
+  )}
   `}
 `;
 
@@ -98,7 +102,7 @@ export const Paragraph = styled.p`
     text-align: center;
     margin:12px;
     color: ${light};
-
+      padding: 10px;
 
     @media (max-width: 500px){
       text-align: justify;
@@ -149,7 +153,7 @@ export const Paragraph = styled.p`
           {
             prop: 'font-size',
             fromSize: '14px',
-            toSize: '18px',
+            toSize: '22px',
           },
           '400px',
           '1500px',

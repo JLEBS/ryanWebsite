@@ -4,6 +4,23 @@ import React from 'react';
 import {Container} from './wrapper';
 import {Bold} from './text';
 
+//W3Schools
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+
+    var currentScrollPos = window.pageYOffset;
+    const nav =  document.getElementById("navbar");
+    let size = nav.offsetHeight;
+
+    if (prevScrollpos > currentScrollPos) {
+        nav.style.top = "0";
+    } else {
+      nav.style.top = `-${size}px`;
+    }
+      prevScrollpos = currentScrollPos;
+}
+
 const HeaderContent = styled.div`
     position: fixed;
     top: 0;
@@ -11,12 +28,13 @@ const HeaderContent = styled.div`
     right: 0;
     background-color: black;
     width: 100%;
+    transition: top 0.3s;
     z-index: 2;`;
 
 const Header = () => (
-    <HeaderContent>
+    <HeaderContent id='navbar'>
         <Container header>
-            <Subheading>
+            <Subheading lineHeight>
                 <Bold href='https://www.youtube.com/watch?v=4jH9PIOiomE'>VIEW NEW PORTFOLIO</Bold>
             </Subheading>
         </Container>

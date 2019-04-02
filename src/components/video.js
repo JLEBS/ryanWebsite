@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Video = styled.video`
-   position: absolute;
+   position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100vw;
@@ -10,6 +10,7 @@ export const Video = styled.video`
     height: auto;
     transform: translate(-50%,-50%);
     z-index: -2;
+    object-fit: cover;
 `;
 
 export const Source = styled.source`

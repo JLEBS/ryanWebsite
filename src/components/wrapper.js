@@ -49,7 +49,9 @@ const FlexRow = styled.div`
     display:flex;
     flex-direction: row;
     justify-content: space-evenly; 
-    align-items:center;
+    ${props => props.center && css`
+        align-items:center;
+    `}
 
     @media (max-width: 1000px) {
         flex-direction: column;

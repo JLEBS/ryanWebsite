@@ -369,3 +369,6 @@ a:active, a:focus {
 
     outline: none;
 }
+span{
+    font-size: unset;
+}

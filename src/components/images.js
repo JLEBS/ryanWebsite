@@ -53,7 +53,6 @@ export const Box = styled.div`
   height: 60vmin;
   position: relative;
   margin-left: 80px;
-  padding-right: 70px;
 
   @media (max-width: 1000px){
     margin-left: 0px;
@@ -61,8 +60,8 @@ export const Box = styled.div`
   }
 `
 export const SpinContainer = styled.div`
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
   animation: spin 12s linear infinite;
   position: relative;
 `
