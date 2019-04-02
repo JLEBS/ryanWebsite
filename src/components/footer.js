@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialMediaGroup, SocialMediaItem } from './images';
-import { Spinner, Linkedin, Twitter, Youtube } from '../img/social-media-images.js'
+import { Linkedin, Twitter, Youtube } from '../img/social-media-images.js'
 
 //Contains Social Media Details
 const Footer = () => (

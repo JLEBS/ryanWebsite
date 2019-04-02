@@ -1,5 +1,4 @@
-import styled, {css, keyframes} from 'styled-components';
-import {colorWipe, colorWipeReverse} from './animation';
+import styled, {css} from 'styled-components';
 
 //Styling for each subsection
 const Subsection = styled.div`

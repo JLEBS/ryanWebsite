@@ -1,6 +1,7 @@
 import ryanrewind from '../img/ryanrewind.jpg'
-import styled, {css} from 'styled-components';
+import styled  from 'styled-components';
 import { fluidRange } from 'polished';
+
 export const SocialMediaGroup = styled.ul`
   display: flex;
   list-style: none;

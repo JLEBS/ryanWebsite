@@ -1,54 +1,31 @@
-import styled, {css, keyframes} from 'styled-components';
+import { keyframes} from 'styled-components';
 import Colors from './colors';
 
+export const colorAnimation = (selector, animation) => {
+    
+    let animationFirst = '';
+    let animationSecond = '';
 
-//Color Swipe Animation
-export const colorWipe = keyframes`
-    0% {
-        background-color: ${Colors.subSectionOne};
+    if(animation === 'primary'){
+        animationFirst = Colors.subSectionOne;
+        animationSecond = Colors.subSectionOneTran;
     }
-    50% {
-        background-color: ${Colors.subSectionOneTran};
+    else{
+        animationFirst = Colors.subSectionTwo;
+        animationSecond = Colors.subSectionTwoTran;
     }
-    100% {
-        background-color: ${Colors.subSectionOne};
-    }
-`
-export const colorWipeReverse = keyframes`
-    0% {
-        background-color: ${Colors.subSectionTwo};
-    }
-    50% {
-        background-color: ${Colors.subSectionTwoTran};
-    }
-    100% {
-        background-color: ${Colors.subSectionTwo};
-    }
-`
 
-export const colorWipeLine = keyframes`
-    0% {
-        fill: ${Colors.subSectionOne};
-    }
-    50% {
-        fill: ${Colors.subSectionOneTran};
-    }
-    100% {
-        fill: ${Colors.subSectionOne};
-    }
-`;
-
-export const colorWipeLineReverse = keyframes`
-    0% {
-        background-color: ${Colors.subSectionTwo};
-    }
-    50% {
-        background-color: ${Colors.subSectionTwoTran};
-    }
-    100% {
-        background-color: ${Colors.subSectionTwo};
-    }
-`
+    return keyframes`
+        0% {
+            ${selector}: ${animationFirst};
+        }
+        50% {
+            ${selector}: ${animationSecond};
+        }
+        100% {
+            ${selector}: ${animationFirst};
+        }`
+}
 
 export const VideoSlide = keyframes`
     0% {

@@ -1,19 +1,17 @@
 import styled, {css} from 'styled-components';
 import Colors from './colors';
 import { fluidRange } from 'polished';
-import React from 'react';
-import { Waypoint } from 'react-waypoint';
 
 const light = Colors.light;
 const dark = Colors.dark;
 let backgroundColor = '';
 
 const TextColorChange = (textColor) => (`
-  ${textColor == 'light' ? `color: ${light}` : `color: ${dark}; text-shadow: none;`}
+  ${textColor === 'light' ? `color: ${light}` : `color: ${dark}; text-shadow: none;`}
 `);
 
-export const Heading = styled.h1
-    `${TextColorChange('light')}
+export const Heading = styled.h1`
+  ${TextColorChange('light')}
     text-align: center;
     display: inline-block;
 
@@ -94,14 +92,6 @@ export const Subheading = styled.h2`
   `}
 `;
 
-export const WayPointParagraph = () => (
-  <Waypoint 
-      onEnter={console.log('enter')}
-      onLeave={console.log('leave')}
-  >
-    <Paragraph></Paragraph>
-  </Waypoint>
-);
 
 export const Paragraph = styled.p`
     max-width:950px;

@@ -8,7 +8,6 @@ import readyup from '../img/readyup.png';
 import {VideoContainer, IconGroup, IconItem, IconDescription} from './icon.js';
 import {Paragraph, Bold, Subheading} from './text.js';
 import {FlexRow, MaxWidthContainer} from './wrapper.js';
-import { isAbsolute } from 'path';
 
 export const videos = [
     {
@@ -51,7 +50,7 @@ export const IconContainer = ({ videos }) => {
       <MaxWidthContainer>
         <IconGroup>
             {videos.map((video, i) => (
-            <IconItem imageUrl={video.image} 
+            <IconItem imageUrl={video.image} key={i}
                 onClick={() => setVideoIndex(i)}>{video.Id}</IconItem>
             ))}
         </IconGroup>

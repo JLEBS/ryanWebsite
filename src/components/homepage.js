@@ -1,6 +1,6 @@
 import React from 'react';
 import { Reset } from 'styled-reset';
-import { Wrapper, Container } from './wrapper';
+import { Wrapper } from './wrapper';
 import {Source, Video, VideoContainer } from './video';
 import {SectionOne, SectionTwo, SectionMiddle} from './section';
 import Title from './title';

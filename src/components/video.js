@@ -1,10 +1,7 @@
-import styled, {css} from 'styled-components';
-import React from 'react';
-import videoMain from '../img/videoMain.mp4';
-import Colors from './colors';
+import styled from 'styled-components';
 
-export const Video = styled.video
-`   position: absolute;
+export const Video = styled.video`
+   position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100vw;
@@ -16,7 +13,6 @@ export const Video = styled.video
 `;
 
 export const Source = styled.source`
-
 `;
 
 export const VideoContainer = styled.div`

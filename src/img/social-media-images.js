@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import Colors from '../components/colors';
-import {colorWipeLine, colorWipeLineReverse} from '../components/animation';
+import {colorAnimation} from '../components/animation';
 import { fluidRange } from 'polished';
 
 const StyledLinkedin = styled.svg`
@@ -74,20 +73,14 @@ const StyledLine = styled.svg`
   `}
 
   & .line-path{
-    animation: ${colorWipeLine} 15s ease infinite;
+    animation: ${colorAnimation('fill', 'primary')} 15s ease infinite;
   }
 
   //For blue section
   ${props => props.alternativeColor && css`
     
-    //fill: green;
-    
-    //This animation applies to the whole SVG container, which it shouldn't
-    //animation: ${colorWipeLineReverse} 15s ease infinite;
-
-    //This doesnt appear to apply to anything, even though it should;
     & .line-path{
-      animation: ${colorWipeLineReverse} 15s ease infinite;
+      animation: ${colorAnimation('fill', 'secondary')} 15s ease infinite;
       outline: 1px solid gold;
     }
 
@@ -109,8 +102,6 @@ const StyledLine = styled.svg`
         '400px',
         '2560px',
       )}
-
     `}
   `}
-
 `;

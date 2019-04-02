@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {colorWipe, colorWipeReverse, VideoSlide} from './animation';
+import {colorAnimation} from './animation';
 
 const Wrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
@@ -18,11 +18,11 @@ const Container = styled.div`
     `}
 
     ${props => props.primary && css`
-        animation: ${colorWipe} 15s ease infinite;
+        animation: ${colorAnimation('background-color', 'primary')} 15s ease infinite;
     `}
 
     ${props => props.secondary && css`
-        animation: ${colorWipeReverse} 15s ease infinite;
+        animation: ${colorAnimation('background-color', 'secondary')} 15s ease infinite;
     `}
 
     ${props => props.neutral && css`

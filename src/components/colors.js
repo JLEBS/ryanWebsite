@@ -1,5 +1,3 @@
-//Color Scheme for the website
-
 const Colors = {
     light : 'white',
     dark : 'black',
