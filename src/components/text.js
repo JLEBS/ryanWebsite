@@ -203,11 +203,9 @@ export const Bold = styled.a.attrs({
     background-image: linear-gradient(
       to right,
 	    ${Colors.light},
-	    ${Colors.youtube} 50%,
+	    ${Colors.toth} 50%,
       white 50%
       );
-
-
 
     ${props => props.youtube && css`
     background-image: linear-gradient(

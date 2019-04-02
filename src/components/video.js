@@ -4,18 +4,15 @@ import videoMain from '../img/videoMain.mp4';
 import Colors from './colors';
 
 export const Video = styled.video
-`   
+`   position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100vw;
     min-height: 100vh;
     width: auto;
     height: auto;
-    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-
-   position: fixed;
-   z-index: -2;
+    z-index: -2;
 `;
 
 export const Source = styled.source`
@@ -30,4 +27,4 @@ export const VideoContainer = styled.div`
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    `
+`;

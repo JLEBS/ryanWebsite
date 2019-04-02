@@ -10,7 +10,7 @@ import {Line, Dash} from '../img/social-media-images.js';
 export const SectionOne = () => (
     <Subsection>
         <Dash dash/>
-        <Line/>
+        <Line primaryColor/>
         <Container primary>
             <FlexColumn>
                 <Paragraph>

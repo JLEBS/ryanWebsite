@@ -15,7 +15,7 @@ export const videos = [
         id : '7DEvC47tvKc', 
         image : readyup, 
         heading : 'Editor',
-        description : () => <Paragraph darkFont>Ready Up: Competitive Team Fortress 2 is a documentary produced by Alex "Dashner" Pylyshyn and Ness "Uberchain" Delacroix, and co-edited by Ryan "loris" Callard. Ready Up: Competitive Team Fortress 2 is a behind-the-scenes narrative of the competitive Team Fortress 2 esports scene, which has maintained a community of pro players, viewers, and talent for over a decade. You can see the update log to <Bold readyup darkFont href='https://www.teamfortress.tv/33949/ready-up-competitive-team-fortress-2'>Ready Up: Competitive Team Fortress 2 on Team Fortress TV</Bold>.</Paragraph>
+        description : () => <Paragraph darkFont>Ready Up: Competitive Team Fortress 2 is a documentary produced by Alex "Dashner" Pylyshyn and Ness "Uberchain" Delacroix, and co-edited by Ryan "loris" Callard. Ready Up: Competitive Team Fortress 2 is a behind the scenes narrative of the competitive Team Fortress 2 esports scene, which has maintained a community of pro players, viewers, and talent for over a decade. You can see the update log to <Bold readyup darkFont href='https://www.teamfortress.tv/33949/ready-up-competitive-team-fortress-2'>Ready Up: Competitive Team Fortress 2 on Team Fortress TV</Bold>.</Paragraph>
     },
     {
         id : 'YiKfsioPpDY',
@@ -40,7 +40,7 @@ export const videos = [
         id : 'rtu_EqjtHmQ',
         image : guitar,
         heading : 'Audio Producer & Videographer',
-        description : () => <Paragraph darkFont>Daryl Kellie is a West London based fingerstyle guitar player. His book features a number of the techniques that he has become well known for, and we created some performance, lesson, and promotional material for its release. The book is being released through Fundamental Changes later in 2019. To see more from Daryl Kellie, <Bold darkFont href='http://darylkellie.com/'>visit his site</Bold>.</Paragraph>
+        description : () => <Paragraph darkFont>Daryl Kellie is a West London based fingerstyle guitar player. His book features a number of the techniques that he has become well known for, and we created some performance, lesson, and promotional material for its release. The book is being released through Fundamental Changes later in 2019. To see more from Daryl Kellie, <Bold toth darkFont href='http://darylkellie.com/'>visit his site</Bold>.</Paragraph>
     }
 ];
 
