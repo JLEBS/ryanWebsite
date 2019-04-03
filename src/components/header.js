@@ -3,6 +3,7 @@ import {Subheading} from './text';
 import React from 'react';
 import {Container} from './wrapper';
 import {Bold} from './text';
+import Urls from './urls';
 
 //W3Schools
 var prevScrollpos = window.pageYOffset;
@@ -35,7 +36,7 @@ const Header = () => (
     <HeaderContent id='navbar'>
         <Container header>
             <Subheading lineHeight>
-                <Bold href='https://www.youtube.com/watch?v=4jH9PIOiomE'>VIEW NEW PORTFOLIO</Bold>
+                <Bold lightFont href={Urls.ryanPortfolio}>VIEW NEW PORTFOLIO</Bold>
             </Subheading>
         </Container>
     </HeaderContent>

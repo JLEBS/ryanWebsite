@@ -34,11 +34,9 @@ export const VideoContainer = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      //pointer-events: none;
-      overflow: none;
     }`;
 
-export const IconGroup = styled.ul`
+export const IconGroup = styled.div`
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -79,7 +77,6 @@ export const IconItem = styled.div`
     
     object-fit:cover;
     border-radius: 50%;
-    cursor: pointer;
     background-size: 100%;
     opacity: 0.5;
     height:100px;
@@ -88,6 +85,11 @@ export const IconItem = styled.div`
     @media(max-width: 1000px){
       height:75px;
       width: 75px;
+    }
+
+    @media(max-width: 400px){
+      height:50px;
+      width: 50px;
     }
 
     &:hover{

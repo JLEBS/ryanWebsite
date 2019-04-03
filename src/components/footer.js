@@ -1,21 +1,21 @@
 import React from 'react';
 import { SocialMediaGroup, SocialMediaItem } from './images';
-import { Linkedin, Twitter, Youtube } from '../img/social-media-images.js'
+import { Linkedin, Twitter, Youtube } from '../img/social-media-images.js';
+import Urls from './urls';
 
-//Contains Social Media Details
 const Footer = () => (
   <footer>
     <SocialMediaGroup>
 
-      <SocialMediaItem target='_blank' href='https://twitter.com/lor_is'>
+      <SocialMediaItem twitter href={Urls.ryanTwitter}>
         <Twitter/> 
       </SocialMediaItem>
 
-      <SocialMediaItem target='_blank' href='https://www.youtube.com/channel/UCIb7HfJ65qLsxP6w2yvo0rw'>
+      <SocialMediaItem youtube href={Urls.ryanYoutube}>
         <Youtube/> 
       </SocialMediaItem>
 
-      <SocialMediaItem target='_blank' href='https://www.linkedin.com/in/ryan-callard-682a38130'>
+      <SocialMediaItem linkedin href={Urls.ryanLinkedin}> 
         <Linkedin/> 
       </SocialMediaItem>
 

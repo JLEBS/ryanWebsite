@@ -21,11 +21,6 @@ const Colors = {
     uni: '#0B57A1',
     videoBackground : '#D72638',
     glow : 'rgb(255,223,0, ',
-    $color1 : '#D72638',//Rose
-    $color2 : '#3F88C5',//Blue
-    $color3 : '#F49D37',//beige
-    $color4 : '#140F2D',//dark purple
-    $color5 : '#F22B29'//red
 }
 
 export default Colors;

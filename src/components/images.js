@@ -2,15 +2,18 @@ import ryanrewind from '../img/ryanrewind.jpg'
 import styled  from 'styled-components';
 import { fluidRange } from 'polished';
 
-export const SocialMediaGroup = styled.ul`
+export const SocialMediaGroup = styled.div`
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   padding: 1rem;
 `
 
-export const SocialMediaItem = styled.a`
-  ${props => `src=(${props.href});`}
+export const SocialMediaItem = styled.a.attrs({
+  target: '_blank',
+  rel: 'noreferrer noopener'
+  })`
+
   fill: white;
   height: 5rem;
   width: 5rem;
@@ -43,7 +46,6 @@ export const SocialMediaItem = styled.a`
     transform: scale(1.15);
     transition: background-color .5s, transform .5s ease-out;
   }
-
 `
 
 //Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/
