@@ -7,15 +7,15 @@ const Footer = () => (
   <footer>
     <SocialMediaGroup>
 
-      <SocialMediaItem twitter aria-label="Click to view the Ryans Twitter" href={Urls.ryanTwitter}>
+      <SocialMediaItem className='animated rotateInUpRight' twitter aria-label="Click to view the Ryans Twitter" href={Urls.ryanTwitter}>
         <Twitter/> 
       </SocialMediaItem>
 
-      <SocialMediaItem youtube aria-label="Click to view the Ryans Youtube Channel" href={Urls.ryanYoutube}>
+      <SocialMediaItem className='animated zoomIn' youtube aria-label="Click to view the Ryans Youtube Channel" href={Urls.ryanYoutube}>
         <Youtube/> 
       </SocialMediaItem>
 
-      <SocialMediaItem linkedin aria-label="Click to view the Ryans Linkedin" href={Urls.ryanLinkedin}> 
+      <SocialMediaItem className='animated rotateInUpLeft' linkedin aria-label="Click to view the Ryans Linkedin" href={Urls.ryanLinkedin}> 
         <Linkedin/> 
       </SocialMediaItem>
 

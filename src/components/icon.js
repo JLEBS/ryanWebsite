@@ -34,6 +34,7 @@ export const VideoContainer = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
+      box-shadow: 14px 13px 17px 2px rgba(0,0,0,0.3);
     }`;
 
 export const IconGroup = styled.div`
@@ -59,8 +60,9 @@ export const IconDescription = styled.div`
     min-height: 360px;
     
     @media(max-height: 1000px){
-      min-height: unset;
-    }`
+      min-height: 340px;
+    }
+    `
     
 export const IconItem = styled.div`
     ${props => `background-image: url(${props.imageUrl});`}

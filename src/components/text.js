@@ -56,9 +56,9 @@ export const Heading = styled.h1`
 `;
 
 export const ShadowHeading = styled(Heading)`
-  text-shadow: 5px 5px ${dark};
+    text-shadow: 5px 5px ${dark};
+    animation-duration: 2s;
 `
-
 export const Subheading = styled.h2`
     font-size: 24px;
     ${TextColorChange('light')}
@@ -95,18 +95,22 @@ export const Subheading = styled.h2`
   `}
 
   ${props => props.lineHeight && css`
-  ${fluidRange(
-    {
-      prop: 'line-height',
-      fromSize: '30px',
-      toSize: '60px',
-    },
-    '400px',
-    '1500px',
-  )}
+    ${fluidRange(
+      {
+        prop: 'line-height',
+        fromSize: '30px',
+        toSize: '60px',
+      },
+      '400px',
+      '1500px',
+    )}
   `}
 `;
 
+export const ShadowSubHeading = styled(Subheading)`
+    text-shadow: 3px 3px ${dark};
+    animation-duration: 2.5s;
+  `;
 
 export const Paragraph = styled.p`
     max-width:950px;

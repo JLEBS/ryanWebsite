@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {colorAnimation} from './animation';
+import {colorAnimation, FadeIn} from './animation';
 
 const Wrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
@@ -55,6 +55,17 @@ const FlexRow = styled.div`
 
     @media (max-width: 1000px) {
         flex-direction: column;
+    }
+
+    & .activeIcon, .activeHugs, .activeDrumShack, .activeGuitar {
+        background-color:red;
+        animation: ${FadeIn} 10s;
+    }
+
+    & .activeToth{
+        background-color: green;
+        animation: ${FadeIn} 10s;
+
     }
 
 `

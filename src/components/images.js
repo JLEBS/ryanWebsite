@@ -15,6 +15,9 @@ export const SocialMediaItem = styled.a.attrs({
   className: 'social-media-image'
   })`
 
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+
   fill: white;
   height: 5rem;
   width: 5rem;
