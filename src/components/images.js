@@ -11,7 +11,8 @@ export const SocialMediaGroup = styled.div`
 
 export const SocialMediaItem = styled.a.attrs({
   target: '_blank',
-  rel: 'noreferrer noopener'
+  rel: 'noreferrer noopener',
+  className: 'social-media-image'
   })`
 
   fill: white;

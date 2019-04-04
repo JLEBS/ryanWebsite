@@ -7,15 +7,15 @@ const Footer = () => (
   <footer>
     <SocialMediaGroup>
 
-      <SocialMediaItem twitter href={Urls.ryanTwitter}>
+      <SocialMediaItem twitter aria-label="Click to view the Ryans Twitter" href={Urls.ryanTwitter}>
         <Twitter/> 
       </SocialMediaItem>
 
-      <SocialMediaItem youtube href={Urls.ryanYoutube}>
+      <SocialMediaItem youtube aria-label="Click to view the Ryans Youtube Channel" href={Urls.ryanYoutube}>
         <Youtube/> 
       </SocialMediaItem>
 
-      <SocialMediaItem linkedin href={Urls.ryanLinkedin}> 
+      <SocialMediaItem linkedin aria-label="Click to view the Ryans Linkedin" href={Urls.ryanLinkedin}> 
         <Linkedin/> 
       </SocialMediaItem>
 

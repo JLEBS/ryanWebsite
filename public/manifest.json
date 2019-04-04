@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ryan CV",
+  "name": "Ryan Callard Portfolio Website",
   "icons": [
     {
       "src": "favicon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#3F88C5",
+  "background_color": "#D72638"
 }
