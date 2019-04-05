@@ -6,8 +6,8 @@ import {FlexColumn, Container} from './wrapper';
 const Title = () => (
     <Container>
         <FlexColumn>
-            <ShadowHeading className='animated zoomInDown'>RYAN CALLARD</ShadowHeading>
-            <ShadowSubHeading className='animated zoomInLeft' >Creative Producer for Audio and Video content.</ShadowSubHeading>
+            <ShadowHeading className='animated bounceInLeft'>RYAN CALLARD</ShadowHeading>
+            <ShadowSubHeading className='animated fadeInUp' >Creative Producer for Audio and Video content.</ShadowSubHeading>
             <Footer ></Footer>
         </FlexColumn>
     </Container>

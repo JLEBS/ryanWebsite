@@ -33,6 +33,15 @@ const Container = styled.div`
 const MaxWidthContainer = styled.div`
     max-width: 1480px;
     margin: 0 auto;
+
+    & .hide{
+        display: none;
+    }
+
+    & .show{
+        display: flex;
+        animation-duration: 4s;
+    }
 `
 
 const FixedContainer = styled.div`
@@ -85,9 +94,7 @@ const FlexRow = styled.div`
     & .activeGuitar {
         background-color: gold;
         animation: ${FadeIn} 10s;
-
     }
-
 `
 
 export { Wrapper, Container, FlexColumn, FlexRow, FixedContainer, MaxWidthContainer};

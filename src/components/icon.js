@@ -58,13 +58,25 @@ export const IconDescription = styled.div`
     flex-direction: column;
     flex: 1;
     min-height: 360px;
-    
+    padding-left: 80px;
+
+    ${fluidRange(
+      {
+        prop: 'padding-left',
+        fromSize: '0px',
+        toSize: '80px',
+      },
+      '1000px',
+      '1540px',
+    )}
+
+
     @media(max-height: 1000px){
       min-height: 340px;
     }
     `
     
-export const IconItem = styled.div`
+export const IconItem = styled.button`
     ${props => `background-image: url(${props.imageUrl});`}
     background-repeat: no-repeat;
     // background-position: center;
@@ -96,9 +108,17 @@ export const IconItem = styled.div`
 
     &:hover{
       opacity: 1;
+    }
+
+    &:focus{
+      opacity: 1;
       animation: glowing 3000ms infinite ease,
       spin 8s infinite linear;
       animation-fill-mode: forwards;
+    }
+
+    &:first-child{
+      display: none;
     }
 
     @keyframes glowing {
@@ -109,7 +129,6 @@ export const IconItem = styled.div`
         40% {
           box-shadow: 0 0 200px ${glow}1);
           background-color: ${glow}0.6);
-          
         }
         60% {
           box-shadow: 0 0 40px ${glow}1);

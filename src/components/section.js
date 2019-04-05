@@ -25,7 +25,7 @@ const ParagraphTest = ({children}) => (
     <InView>
         {({ inView, ref}) => (
             <ParagraphContainer>
-                <div className={inView ? `animated ${randomAnimation()} classActive`  : 'classInactive'} ref={ref}>
+                <div className={inView ? `animated fadeInUp classActive`  : 'classInactive'} ref={ref}>
                     <Paragraph>
                         {children}
                     </Paragraph>

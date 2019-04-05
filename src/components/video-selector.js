@@ -9,8 +9,16 @@ import {VideoContainer, IconGroup, IconItem, IconDescription} from './icon.js';
 import {Paragraph, Bold, Subheading} from './text.js';
 import {FlexRow, MaxWidthContainer} from './wrapper.js';
 import Urls from './urls';
+import {randomAnimation} from './animation';
 
 export const videos = [
+    {
+        id : '', 
+        image : '', 
+        heading : '',
+        description : () => '',
+        classname : ''
+    },
     {
         id : '7DEvC47tvKc', 
         image : readyup, 
@@ -48,24 +56,35 @@ export const videos = [
     }
 ];
 
+let isHidden = 'hide';
+const show = () => isHidden==='hide' ? isHidden='show' : console.log('Click Event');
+
 export const IconContainer = ({ videos }) => {
     const [videoIndex, setVideoIndex] = useState(0)
-    const video = videos[videoIndex]
+    const video = videos[videoIndex];
+
     return (
       <MaxWidthContainer>
         <IconGroup>
             {videos.map((video, i) => (
-            <IconItem imageUrl={video.image} key={i}
-                onClick={() => setVideoIndex(i)}>{video.Id}</IconItem>
+                <IconItem
+                    key={i} 
+                    imageUrl={video.image}
+                    onClick={() => {
+                        show()
+                        setVideoIndex(i)
+                    }}
+                >
+                    {video.Id}
+                </IconItem>
             ))}
         </IconGroup>
         
-        <FlexRow>
+        <FlexRow className={'animated fadeInLeft ' + isHidden}>
             <VideoContainer>
                 <YouTube rel="preconnect" videoId={video.id} />
             </VideoContainer>
-
-            <IconDescription className={video.classname}>
+            <IconDescription>
                 <Subheading darkFont>{video.heading}</Subheading>
                 <video.description/>
             </IconDescription>
