@@ -4,6 +4,7 @@ import './index.css';
 import './reset.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+require('intersection-observer');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

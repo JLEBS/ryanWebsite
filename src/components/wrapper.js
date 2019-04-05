@@ -57,13 +57,33 @@ const FlexRow = styled.div`
         flex-direction: column;
     }
 
-    & .activeIcon, .activeHugs, .activeDrumShack, .activeGuitar {
-        background-color:red;
+    & .activeReadyUp{ 
+        background-color: green;
         animation: ${FadeIn} 10s;
     }
 
     & .activeToth{
-        background-color: green;
+        background-color: red;
+        animation: ${FadeIn} 10s;
+    }
+
+    & .activeToth{
+        background-color: blue;
+        animation: ${FadeIn} 10s;
+    }
+    
+    & .activeHugs {
+        background-color: purple;
+        animation: ${FadeIn} 10s;
+    }
+    
+    & .activeDrumshack{
+        background-color: pink;
+        animation: ${FadeIn} 10s;
+    }
+    
+    & .activeGuitar {
+        background-color: gold;
         animation: ${FadeIn} 10s;
 
     }

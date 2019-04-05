@@ -16,35 +16,35 @@ export const videos = [
         image : readyup, 
         heading : 'Editor',
         description : () => <Paragraph darkFont>Ready Up: Competitive Team Fortress 2 is a documentary produced by Alex "Dashner" Pylyshyn and Ness "Uberchain" Delacroix, and co-edited by Ryan "loris" Callard. Ready Up: Competitive Team Fortress 2 is a behind the scenes narrative of the competitive Team Fortress 2 esports scene, which has maintained a community of pro players, viewers, and talent for over a decade. You can see the update log to Ready Up: Competitive Team Fortress 2 on <Bold readyup href={Urls.readyupLog}>Team Fortress TV</Bold>.</Paragraph>,
-        classname : 'activeIcon'
+        classname : 'activeReadyUp'
     },
     {
         id : 'YiKfsioPpDY',
         image : toth,
         heading : 'Videographer & Video Editor',
         description : () => <Paragraph darkFont>Tip of the Hats is an annual live-streamed gaming charity event benefitting Camp One Step by Children's Oncology Services in Chicago. Tip of the Hats has raised over $1,000,000 through live variety gaming events based in Chicago and Santa Ana, California. During the event, we created behind the scenes content for release during breaks and on social media. To see more from Tip of the Hats, visit <Bold toth href={Urls.toth}>the site</Bold>.</Paragraph>,
-        classname : 'activeIcon'
+        classname : 'activeToth'
     },
     {
         id : 'v4y8tHE83HE',
         image : hugs,
         heading : 'Project Lead',
         description : () => <Paragraph darkFont>Hugs.tf is an annual live-streamed gaming charity event benefitting Special Effect, the UK-based gamers charity. Based in London, Hugs.tf completes 24+ hour gaming marathons featuring the group's favourite game: Team Fortress 2. Since 2013, the event has managed to raise over £42,000 for Special Effect through the combined contributions of the TF2 community. To see more from hugs.tf, <Bold hugs href={Urls.hugsTwitter}>visit the site</Bold> or you can <Bold hugs href={Urls.hugsTwitter}>find us on Twitter</Bold>.</Paragraph>,
-        classname : 'activeIcon'
+        classname : 'activeHugs'
     },
     {
         id : 'ENC_jxNfvLc',
         image : drumshack,
         heading : 'Video Producer',
         description : () => <Paragraph darkFont>Drumshack is a drumming and percussion shop based in Clapham, South London. They release weekly video content featuring product demos, guest speakers, and tips and tricks for the drummer in training. Drumshack's Youtube presence has been slowly growing since 2016, and now has over 450,000 video views. To see more from Drumshack, visit the <Bold drumshack href={Urls.drumshack}>Youtube page</Bold>.</Paragraph>,
-        classname : 'activeIcon'
+        classname : 'activeDrumshack'
     },
     {
         id : 'rtu_EqjtHmQ',
         image : guitar,
         heading : 'Audio Producer & Videographer',
         description : () => <Paragraph darkFont>Daryl Kellie is a West London based fingerstyle guitar player. His book features a number of the techniques that he has become well known for, and we created some performance, lesson, and promotional material for its release. The book is being released through Fundamental Changes later in 2019. To see more from Daryl Kellie, <Bold toth href={Urls.daryl}>visit his site</Bold>.</Paragraph>,
-        classname : 'activeIcon'
+        classname : 'activeGuitar'
     }
 ];
 
