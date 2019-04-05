@@ -1,6 +1,11 @@
 import styled, {css} from 'styled-components';
 import {colorAnimation, FadeIn} from './animation';
 
+const responsiveAnimation = () => {
+    var w = window.innerWidth;
+    return w / 300;
+}
+
 const Wrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
 `;
@@ -40,7 +45,7 @@ const MaxWidthContainer = styled.div`
 
     & .show{
         display: flex;
-        animation-duration: 4s;
+        animation-duration: ${responsiveAnimation}s;
     }
 `
 

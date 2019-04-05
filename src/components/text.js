@@ -162,7 +162,8 @@ export const Paragraph = styled.p`
 
       ${props => props.darkFont && css`
       ${TextColorChange('dark')}
-      margin: unset;
+        margin: unset;
+        text-align: left;
 
         ${fluidRange(
           {
@@ -176,8 +177,8 @@ export const Paragraph = styled.p`
         ${fluidRange(
           {
             prop: 'line-height',
-            fromSize: '20px',
-            toSize: '24px',
+            fromSize: '24px',
+            toSize: '32px',
           },
           '400px',
           '1500px',
@@ -185,8 +186,8 @@ export const Paragraph = styled.p`
         ${fluidRange(
           {
             prop: 'letter-spacing',
-            fromSize: '1px',
-            toSize: '2px',
+            fromSize: '0px',
+            toSize: '0px',
           },
           '400px',
           '1500px',
