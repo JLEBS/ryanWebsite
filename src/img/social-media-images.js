@@ -73,7 +73,7 @@ const StyledLine = styled.svg`
 
   //For rotated version
   ${props => props.rotation && css`
-    top:-1px
+    top:-2px
     transform: rotate(180deg);
 
     ${props => props.dash && css`

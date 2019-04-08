@@ -67,38 +67,9 @@ const FlexRow = styled.div`
         align-items:center;
     `}
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1300px) {
         flex-direction: column;
-    }
-
-    & .activeReadyUp{ 
-        background-color: green;
-        animation: ${FadeIn} 10s;
-    }
-
-    & .activeToth{
-        background-color: red;
-        animation: ${FadeIn} 10s;
-    }
-
-    & .activeToth{
-        background-color: blue;
-        animation: ${FadeIn} 10s;
-    }
-    
-    & .activeHugs {
-        background-color: purple;
-        animation: ${FadeIn} 10s;
-    }
-    
-    & .activeDrumshack{
-        background-color: pink;
-        animation: ${FadeIn} 10s;
-    }
-    
-    & .activeGuitar {
-        background-color: gold;
-        animation: ${FadeIn} 10s;
+        align-items: center;
     }
 `
 

@@ -9,7 +9,6 @@ import {VideoContainer, IconGroup, IconItem, IconDescription} from './icon.js';
 import {Paragraph, Bold, Subheading} from './text.js';
 import {FlexRow, MaxWidthContainer} from './wrapper.js';
 import Urls from './urls';
-import {randomAnimation} from './animation';
 
 export const videos = [
     {

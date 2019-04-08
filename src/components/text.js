@@ -26,6 +26,7 @@ export const Heading = styled.h1`
     text-align: center;
     display: inline-block;
     text-transform: uppercase;
+    z-index: 3;
 
     ${fluidRange(
         {

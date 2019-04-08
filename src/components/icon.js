@@ -7,15 +7,15 @@ const glow = Colors.glow;
 export const VideoContainer = styled.div`
     
     position: relative;
-    padding-bottom: 25%;
+    padding-bottom: 24%;
     padding-top: 25px;
     height: 0;
     flex: 1;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1300px){
 
       width: 100%;
-      padding-bottom: 49%;
+      padding-bottom: 46%;
 
       ${fluidRange(
         {
@@ -24,7 +24,7 @@ export const VideoContainer = styled.div`
           toSize: '65px',
         },
         '400px',
-        '1000px',
+        '1300px',
       )}
     }
     
@@ -57,7 +57,7 @@ export const IconDescription = styled.div`
     list-style: none;
     flex-direction: column;
     flex: 1;
-    min-height: 360px;
+    min-height: 380px;
     padding-left: 80px;
 
     ${fluidRange(
@@ -66,7 +66,7 @@ export const IconDescription = styled.div`
         fromSize: '0px',
         toSize: '80px',
       },
-      '1000px',
+      '1300px',
       '1540px',
     )}
 

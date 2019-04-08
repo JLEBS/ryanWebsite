@@ -7,7 +7,6 @@ import { FlexColumn, FlexRow, Container } from './wrapper';
 import {videos, IconContainer} from './video-selector';
 import {Line, Dash} from '../img/social-media-images.js';
 import Urls from './urls';
-import {randomAnimation} from './animation';
 import styled from 'styled-components';
 import { InView } from 'react-intersection-observer';
 

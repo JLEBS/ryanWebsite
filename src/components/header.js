@@ -8,19 +8,23 @@ import Urls from './urls';
 //W3Schools
 var prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
+//if ($(window).width() > 500) {
 
-    var currentScrollPos = window.pageYOffset;
-    const nav =  document.getElementById("navbar");
-    let size = nav.offsetHeight;
+    window.onscroll = function() {
 
-    if (prevScrollpos > currentScrollPos) {
-        nav.style.top = "0";
-    } else {
-      nav.style.top = `-${size}px`;
+        var currentScrollPos = window.pageYOffset;
+        const nav =  document.getElementById("navbar");
+        let size = nav.offsetHeight;
+
+        if (prevScrollpos > currentScrollPos) {
+            nav.style.top = "0";
+        } else {
+        nav.style.top = `-${size}px`;
+        }
+        prevScrollpos = currentScrollPos;
     }
-      prevScrollpos = currentScrollPos;
-}
+
+//}
 
 const HeaderContent = styled.div`
     position: fixed;
@@ -38,7 +42,7 @@ const Header = () => (
             <Subheading lineHeight>
                 <Bold lightFont href={Urls.ryanPortfolio}>VIEW NEW PORTFOLIO</Bold>
             </Subheading>
-        </Container>
+        </Container> 
     </HeaderContent>
 );
 
