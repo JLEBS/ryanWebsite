@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import indexFunction from './z-index';
+
 
 export const Video = styled.video`
    position: fixed;
@@ -9,7 +11,6 @@ export const Video = styled.video`
     width: auto;
     height: auto;
     transform: translate(-50%,-50%);
-    z-index: -2;
     object-fit: cover;
 `;
 
@@ -24,4 +25,5 @@ export const VideoContainer = styled.div`
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    ${indexFunction('video')}
 `;

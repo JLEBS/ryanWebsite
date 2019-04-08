@@ -4,6 +4,7 @@ import React from 'react';
 import {Container} from './wrapper';
 import {Bold} from './text';
 import Urls from './urls';
+import indexFunction from './z-index';
 
 //W3Schools
 var prevScrollpos = window.pageYOffset;
@@ -34,7 +35,7 @@ const HeaderContent = styled.div`
     background-color: black;
     width: 100%;
     transition: top 0.3s;
-    z-index: 2;`;
+    ${indexFunction('header')}`;
 
 const Header = () => (
     <HeaderContent id='navbar'>

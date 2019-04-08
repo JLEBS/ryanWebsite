@@ -4,7 +4,7 @@ import Footer from './footer';
 import {FlexColumn, Container} from './wrapper';
 
 const Title = () => (
-    <Container>
+    <Container header>
         <FlexColumn>
             <ShadowHeading className='animated bounceInLeft'>RYAN CALLARD</ShadowHeading>
             <ShadowSubHeading className='animated fadeInUp' >Creative Producer for Audio and Video content.</ShadowSubHeading>

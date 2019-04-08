@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components';
 import {colorAnimation, FadeIn} from './animation';
+import indexFunction from './z-index';
 
 const responsiveAnimation = () => {
     var w = window.innerWidth;
@@ -20,6 +21,7 @@ const Container = styled.div`
     ${props => props.header && css`
        padding-top: unset;
        padding-bottom: unset;
+       ${indexFunction('title')}
     `}
 
     ${props => props.primary && css`

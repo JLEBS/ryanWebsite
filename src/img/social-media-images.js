@@ -8,16 +8,16 @@ const StyledSVG = styled.svg``;
 export const Line = ({
   rotation, alternativeColor
 }) => (
-  <StyledLine viewBox="0 0 1920 171" fill="none" xmlns="http://www.w3.org/2000/svg"  alternativeColor={alternativeColor} rotation={rotation}>
-    <path className='line-path' d="M0 171L1920 0V171H0Z" />
+  <StyledLine viewBox="0 0 2392 254" fill="none" xmlns="http://www.w3.org/2000/svg"  alternativeColor={alternativeColor} rotation={rotation}>
+    <path className='line-path' d="M0 172.582L2392 0.0817871V254H0V172.582Z" />
   </StyledLine>
 );
 
 export const Dash = ({
   rotation, alternativeColor, dash
 }) => (
-  <StyledLine viewBox="0 0 1921 191" fill="none" xmlns="http://www.w3.org/2000/svg" dash={dash}  alternativeColor={alternativeColor} rotation={rotation}>
-    <path className='line-path' d="M0 174.47L1921 0V17.0406L0 191V174.47Z"/>
+  <StyledLine viewBox="0 0 2392 200"  fill="none" xmlns="http://www.w3.org/2000/svg" dash={dash}  alternativeColor={alternativeColor} rotation={rotation}>
+    <path className='line-path' d="M0 174.001L2392 0V27.0405L0 200.001V174.001Z"/>
   </StyledLine>
 );
 
@@ -49,9 +49,12 @@ const StyledLine = styled.svg`
 
     ${fluidRange(
       {
+        //190px
+
+
         prop: 'top',
         fromSize: '35px',
-        toSize: '220px',
+        toSize: '180px',
       },
       '400px',
       '2560px',
@@ -81,8 +84,8 @@ const StyledLine = styled.svg`
       ${fluidRange(
         {
           prop: 'top',
-          fromSize: '-35px',
-          toSize: '-220px',
+          fromSize: '-30px',
+          toSize: '-180px',
         },
         '400px',
         '2560px',

@@ -79,7 +79,6 @@ export const Shape = styled.div`
   animation: morph 8s ease-in-out infinite both alternate;
   position: absolute;
   overflow: hidden;
-  z-index: 5;
 `
 
 export const Image = styled.div`
