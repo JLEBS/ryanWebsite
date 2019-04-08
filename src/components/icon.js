@@ -72,7 +72,7 @@ export const IconDescription = styled.div`
 
 
     @media(max-height: 1000px){
-      min-height: 340px;
+      min-height: 350px;
     }
     `
     

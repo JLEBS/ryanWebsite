@@ -25,6 +25,7 @@ export const Heading = styled.h1`
   ${TextColorChange('light')}
     text-align: center;
     display: inline-block;
+    text-transform: uppercase;
 
     ${fluidRange(
         {
