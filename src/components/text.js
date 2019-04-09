@@ -120,10 +120,6 @@ export const Paragraph = styled.p`
     color: ${light};
     padding: 10px;
 
-    @media (max-width: 500px){
-      text-align: justify;
-    }
-
     ${fluidRange(
         {
           prop: 'font-size',
@@ -193,7 +189,15 @@ export const Paragraph = styled.p`
           '400px',
           '1500px',
         )}
+        @media (max-width: 1300px){
+          margin: 0px;
+          padding: 0px;
+        }
     `}
+
+    @media (max-width: 500px){
+      text-align: justify;
+    }
 `;
 
 export const Bold = styled.a.attrs({

@@ -3,7 +3,7 @@ import indexFunction from './z-index';
 
 
 export const Video = styled.video`
-   position: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100vw;
@@ -25,5 +25,5 @@ export const VideoContainer = styled.div`
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    ${indexFunction('video')}
+    // ${indexFunction('video')}
 `;

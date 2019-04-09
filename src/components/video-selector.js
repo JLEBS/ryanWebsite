@@ -67,6 +67,9 @@ export const IconContainer = ({ videos }) => {
         <IconGroup>
             {videos.map((video, i) => (
                 <IconItem
+                    href='#'
+                    tabindex="i"
+                    ontouchstart=""
                     key={i} 
                     imageUrl={video.image}
                     onClick={() => {

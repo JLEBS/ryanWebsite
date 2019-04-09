@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import Colors from './colors';
 import { fluidRange } from 'polished';
-
-const glow = Colors.glow;
+import {SpinGrow, Glowing, animationFunction} from './animation';
 
 export const VideoContainer = styled.div`
     
@@ -79,21 +77,12 @@ export const IconDescription = styled.div`
 export const IconItem = styled.button`
     ${props => `background-image: url(${props.imageUrl});`}
     background-repeat: no-repeat;
-    // background-position: center;
- 
-    // max-width: 49px;
-    // width: 100%;
-    // height: 383px;
-    // height: 0px;
-    // background-size: cover;
-    // padding-top: 4%;
-    // border-radius: 50%;
-    
     object-fit:cover;
     border-radius: 50%;
     background-size: 100%;
     opacity: 0.5;
     height:100px;
+    background-color: transparent;
     width:100px;
 
     @media(max-width: 1000px){
@@ -108,43 +97,17 @@ export const IconItem = styled.button`
 
     &:hover{
       opacity: 1;
+      transform: scale(1.15);
     }
 
     &:focus{
       opacity: 1;
-      animation: glowing 3000ms infinite ease,
-      spin 8s infinite linear;
+      animation: ${Glowing} 3000ms infinite ease, ${SpinGrow} 8s infinite linear;
+      -webkit-animation: ${Glowing} 3000ms infinite ease, ${SpinGrow} 8s infinite linear;
       animation-fill-mode: forwards;
     }
 
     &:first-child{
       display: none;
     }
-
-    @keyframes glowing {
-        0% {
-          box-shadow: 0 0 0px ${glow}1);
-          background-color: ${glow}0.1);
-        }
-        40% {
-          box-shadow: 0 0 200px ${glow}1);
-          background-color: ${glow}0.6);
-        }
-        60% {
-          box-shadow: 0 0 40px ${glow}1);
-          background-color: ${glow}0.4);
-        }
-        100% {
-          box-shadow: 0 0 0px ${glow}1);
-          background-color: ${glow}0.1);
-        }
-      }
-      
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
 `

@@ -7,7 +7,6 @@ const indexFunction = (div) => {
         section: '0',
         video: '-3',
     }
-
     return `z-index: ${Zindex[div]}`;
 }
 
