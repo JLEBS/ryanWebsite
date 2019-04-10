@@ -211,6 +211,7 @@ export const Bold = styled.a.attrs({
     text-decoration: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
 
     //Default
     ${props => hoverGradient('light', 'toth', props.lightFont)}

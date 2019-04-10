@@ -8,7 +8,7 @@ const StyledSVG = styled.svg``;
 export const Line = ({
   rotation, alternativeColor
 }) => (
-  <StyledLine viewBox="0 0 2392 254" fill="none" xmlns="http://www.w3.org/2000/svg"  alternativeColor={alternativeColor} rotation={rotation}>
+  <StyledLine preserveAspectRatio="none" viewBox="0 0 2392 254" fill="none" xmlns="http://www.w3.org/2000/svg"  alternativeColor={alternativeColor} rotation={rotation}>
     <path className='line-path' d="M0 172.582L2392 0.0817871V254H0V172.582Z" />
   </StyledLine>
 );
@@ -16,7 +16,7 @@ export const Line = ({
 export const Dash = ({
   rotation, alternativeColor, dash
 }) => (
-  <StyledLine viewBox="0 0 2392 200"  fill="none" xmlns="http://www.w3.org/2000/svg" dash={dash}  alternativeColor={alternativeColor} rotation={rotation}>
+  <StyledLine preserveAspectRatio="none"  viewBox="0 0 2392 200"  fill="none" xmlns="http://www.w3.org/2000/svg" dash={dash}  alternativeColor={alternativeColor} rotation={rotation}>
     <path className='line-path' d="M0 174.001L2392 0V27.0405L0 200.001V174.001Z"/>
   </StyledLine>
 );
@@ -43,6 +43,7 @@ const StyledLine = styled.svg`
 
   position: relative;
   top: 5px;
+  
 
   ${props => props.dash && css`
     top: 60px;
