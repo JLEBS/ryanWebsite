@@ -19,12 +19,14 @@ const ParagraphContainer = styled.div`
 `;
 const ref = React.createRef();
 
+let i = '';
 
 const addClass = () => {
     this.divRef.current.classList.add('animated')
 }
 const removeClass = () => {
-   this.ref.current.classList.remove('animated')
+  // this.ref.current.classList.remove('animated')
+  console.log('added class');
 }
 
 const ParagraphTest = ({children}) => (
@@ -32,8 +34,8 @@ const ParagraphTest = ({children}) => (
         {({ inView, ref, i}) => (
             <ParagraphContainer>
                 <div 
-                    className={inView ? 'animated fadeInUp' : 'classInactive'} 
-                    //onAnimationEnd={() => removeClass()}
+                    className={inView ? `[ animated fadeInUp ] ${removeClass()}` : 'classInactive'} 
+                    onAnimationEnd={() => console.log('Animated completed')}
                     ref={ref}
                     count={i}
                 >
