@@ -11,20 +11,31 @@ import styled from 'styled-components';
 import { InView } from 'react-intersection-observer';
 
 const ParagraphContainer = styled.div`
-
     & .classInactive{
         opacity: 0;
     }
-    & .classActive{
-  
+    & .animationComplete{
     }
 `;
+const ref = React.createRef();
+
+
+const addClass = () => {
+    this.divRef.current.classList.add('animated')
+}
+const removeClass = () => {
+   this.ref.current.classList.remove('animated')
+}
 
 const ParagraphTest = ({children}) => (
     <InView>
         {({ inView, ref}) => (
             <ParagraphContainer>
-                <div className={inView ? `animated fadeInUp classActive`  : 'classInactive'} ref={ref}>
+                <div 
+                    className={inView ? 'animated fadeInUp' : 'classInactive'} 
+                  //  onAnimationEnd={() => removeClass()}
+                    ref={ref}
+                >
                     <Paragraph>
                         {children}
                     </Paragraph>
