@@ -194,10 +194,6 @@ export const Paragraph = styled.p`
           padding: 0px;
         }
     `}
-
-    @media (max-width: 500px){
-      text-align: justify;
-    }
 `;
 
 export const Bold = styled.a.attrs({

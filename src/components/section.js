@@ -61,7 +61,7 @@ export const SectionOne = () => (
                 </ParagraphTest>
     
                 <ParagraphTest>
-                    In 2018 he co-edited and released <Bold lightFont readyup aria-label="Click to view the Ready Up documentary" href={Urls.readyup}>Ready Up: Competitive Team Fortress 2</Bold>, a documentary focused around the competitive TF2 community, which has had over 50,000 views on Youtube, and features interviews from <Bold lightFont aria-label="Click to view Pauls Chaloner's wikipedia page" href={Urls.paulWiki}>Paul "Redeye" Chaloner</Bold> and other prominent industry figures from CSGO and the Overwatch League.
+                    In 2018 he co-edited and released <Bold lightFont readyup aria-label="Click to view the Ready Up documentary" href={Urls.readyup}>Ready Up: Competitive Team Fortress 2,</Bold> a documentary focused around the competitive TF2 community, which has had over 50,000 views on Youtube, and features interviews from <Bold lightFont aria-label="Click to view Pauls Chaloner's wikipedia page" href={Urls.paulWiki}>Paul "Redeye" Chaloner</Bold> and other prominent industry figures from CSGO and the Overwatch League.
                 </ParagraphTest>
     
                 <ParagraphTest>

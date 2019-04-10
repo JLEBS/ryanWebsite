@@ -53,6 +53,7 @@ export const SocialMediaItem = styled.a.attrs({
 `
 
 //Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/
+//https://codepen.io/enbee81/pen/LBMKqV
 
 export const Box = styled.div`
   width: 60vmin;
@@ -79,6 +80,7 @@ export const Shape = styled.div`
   animation: morph 8s ease-in-out infinite both alternate;
   position: absolute;
   overflow: hidden;
+  z-index: 5;
 `
 
 export const Image = styled.div`

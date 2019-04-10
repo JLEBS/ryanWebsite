@@ -43,18 +43,14 @@ const StyledLine = styled.svg`
 
   position: relative;
   top: 5px;
-  
 
   ${props => props.dash && css`
     top: 60px;
 
     ${fluidRange(
       {
-        //190px
-
-
         prop: 'top',
-        fromSize: '35px',
+        fromSize: '30px',
         toSize: '180px',
       },
       '400px',
