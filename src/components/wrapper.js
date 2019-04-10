@@ -9,6 +9,7 @@ const responsiveAnimation = () => {
 
 const Wrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
+    background-color: black;
 `;
 
 const Container = styled.div`
