@@ -4,8 +4,7 @@ import { Wrapper } from './wrapper';
 import {Source, Video, VideoContainer} from './video';
 import {SectionOne, SectionTwo, SectionMiddle} from './section';
 import Title from './title';
-import videoMainNew from '../img/videoMainNew.mp4';
-//import videoMainWebm from '../img/videoMainWebmNew.webm';
+import backgroundVideo from '../video/backgroundVideo.webm';
 import Header from './header';
 
 /*
@@ -42,7 +41,7 @@ const HomePage = () => (
         <VideoContainer>
             <Title/>
             <Video id='backgroundVideo' autoPlay muted loop>
-                <Source src={videoMainNew} type='video/mp4'/>
+                <Source src={backgroundVideo} type='video/mp4'/>
             </Video>
         </VideoContainer>
 
