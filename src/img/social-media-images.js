@@ -81,7 +81,7 @@ const StyledLine = styled.svg`
       ${fluidRange(
         {
           prop: 'top',
-          fromSize: '-30px',
+          fromSize: '-27px',
           toSize: '-180px',
         },
         '400px',
