@@ -18,7 +18,7 @@ export const VideoContainer = styled.div`
       ${fluidRange(
         {
           prop: 'margin-bottom',
-          fromSize: '25px',
+          fromSize: '40px',
           toSize: '65px',
         },
         '400px',

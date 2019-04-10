@@ -66,6 +66,7 @@ export const Subheading = styled.h2`
     text-shadow: none;
     text-align: center;
     display: inline-block;
+    font-weight: 600;
 
     ${props => props.shadow && css`
     text-shadow: 2px 2px ${dark};
@@ -84,7 +85,7 @@ export const Subheading = styled.h2`
     ${fluidRange(
       {
         prop: 'letter-spacing',
-        fromSize: '0px',
+        fromSize: '1px',
         toSize: '2.4px',
       },
       '400px',
@@ -192,6 +193,7 @@ export const Paragraph = styled.p`
         @media (max-width: 1300px){
           margin: 0px;
           padding: 0px;
+          padding-top:20px;
         }
     `}
 `;

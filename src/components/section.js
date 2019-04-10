@@ -29,12 +29,13 @@ const removeClass = () => {
 
 const ParagraphTest = ({children}) => (
     <InView>
-        {({ inView, ref}) => (
+        {({ inView, ref, i}) => (
             <ParagraphContainer>
                 <div 
                     className={inView ? 'animated fadeInUp' : 'classInactive'} 
-                  //  onAnimationEnd={() => removeClass()}
+                    //onAnimationEnd={() => removeClass()}
                     ref={ref}
+                    count={i}
                 >
                     <Paragraph>
                         {children}
@@ -53,7 +54,7 @@ export const SectionOne = () => (
             <FlexColumn>
                 
                 <ParagraphTest>
-                    <Bold lightFont linkedin aria-label="Click to view Ryans LinkedIn" href={Urls.ryanLinkedin}>Ryan Callard</Bold> is a British audio visual professional working with independent companies to create high-impact video content for social media platforms including <Bold lightFont youtube aria-label="Click to view Ryans YouTube Channel" href={Urls.ryanYoutube}>YouTube</Bold> and <Bold lightFont twitch aria-label="Click to view Ryans Twitch Channel" href={Urls.ryanTwitch}>Twitch</Bold>.
+                    <Bold lightFont linkedin aria-label="Click to view Ryans LinkedIn" href={Urls.ryanLinkedin}>Ryan Callard</Bold> is a British audio visual professional working with independent companies to create high-impact video content for social media platforms including <Bold lightFont youtube aria-label="Click to view Ryans YouTube Channel" href={Urls.ryanYoutube}>YouTube</Bold> and <Bold lightFont twitch aria-label="Click to view Ryans Twitch Channel" href={Urls.ryanTwitch}>Twitch.</Bold>
                 </ParagraphTest>
     
                 <ParagraphTest>
@@ -65,11 +66,11 @@ export const SectionOne = () => (
                 </ParagraphTest>
     
                 <ParagraphTest>
-                    Outside of esports, Ryan works as a director, writer, and voiceover producer for <Bold lightFont pixel aria-label="Click to view Arrogant Pixel's website" href={Urls.pixel}>Arrogant Pixel</Bold>, an independent game development studio based in West London.
+                    Outside of esports, Ryan works as a director, writer, and voiceover producer for <Bold lightFont pixel aria-label="Click to view Arrogant Pixel's website" href={Urls.pixel}>Arrogant Pixel,</Bold> an independent game development studio based in West London.
                 </ParagraphTest>
     
                 <ParagraphTest>
-                    Ryan also volunteers as lead organiser of annual livestream charity event <Bold lightFont hugs aria-label="Click to view the Hugs website" href={Urls.hugsSite}>Hugs.tf</Bold>, and as a videographer and editor for <Bold lightFont toth aria-label="Click to view Hugs Twitter" href={Urls.toth}>Tip of the Hats</Bold>.
+                    Ryan also volunteers as lead organiser of annual livestream charity event <Bold lightFont hugs aria-label="Click to view the Hugs website" href={Urls.hugsSite}>Hugs.tf,</Bold> and as a videographer and editor for <Bold lightFont toth aria-label="Click to view Hugs Twitter" href={Urls.toth}>Tip of the Hats</Bold>.
                 </ParagraphTest>
             
             </FlexColumn>
