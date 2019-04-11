@@ -17,9 +17,8 @@ const ParagraphContainer = styled.div`
     & .animationComplete{
     }
 `;
-const ref = React.createRef();
 
-let i = '';
+const ref = React.createRef();
 
 const addClass = () => {
     this.divRef.current.classList.add('animated')
@@ -37,7 +36,6 @@ const ParagraphTest = ({children}) => (
                     className={inView ? `[ animated fadeInUp ] ${removeClass()}` : 'classInactive'} 
                     onAnimationEnd={() => console.log('Animated completed')}
                     ref={ref}
-                    count={i}
                 >
                     <Paragraph>
                         {children}
@@ -54,7 +52,6 @@ export const SectionOne = () => (
         <Line primaryColor/>
         <Container primary>
             <FlexColumn>
-                
                 <ParagraphTest>
                     <Bold lightFont linkedin aria-label="Click to view Ryans LinkedIn" href={Urls.ryanLinkedin}>Ryan Callard</Bold> is a British audio visual professional working with independent companies to create high-impact video content for social media platforms including <Bold lightFont youtube aria-label="Click to view Ryans YouTube Channel" href={Urls.ryanYoutube}>YouTube</Bold> and <Bold lightFont twitch aria-label="Click to view Ryans Twitch Channel" href={Urls.ryanTwitch}>Twitch.</Bold>
                 </ParagraphTest>
@@ -72,9 +69,8 @@ export const SectionOne = () => (
                 </ParagraphTest>
     
                 <ParagraphTest>
-                    Ryan also volunteers as lead organiser of annual livestream charity event <Bold lightFont hugs aria-label="Click to view the Hugs website" href={Urls.hugsSite}>Hugs.tf,</Bold> and as a videographer and editor for <Bold lightFont toth aria-label="Click to view Hugs Twitter" href={Urls.toth}>Tip of the Hats</Bold>.
+                    Ryan also volunteers as lead organiser of annual livestream charity event <Bold lightFont hugs aria-label="Click to view the Hugs website" href={Urls.hugsSite}>Hugs.tf,</Bold> and as a videographer and editor for <Bold lightFont toth aria-label="Click to view Hugs Twitter" href={Urls.toth}>Tip of the Hats.</Bold>
                 </ParagraphTest>
-            
             </FlexColumn>
         </Container>
     </Subsection>

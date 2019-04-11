@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components';
 import indexFunction from './z-index';
+import Colors from './colors'
 
 export const Video = styled.video`
     position: fixed;
@@ -24,4 +25,16 @@ export const VideoContainer = styled.div`
     flex-direction: column;
     position: relative;
     overflow: hidden;
+
+    &::after{
+        content: '';
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: ${Colors.subSectionTwo};
+        opacity: 0.3;
+        z-index: 0;
+        height: 100vh;
+        width: 100vw;
+    }
 `;
