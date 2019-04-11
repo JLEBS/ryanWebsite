@@ -71,6 +71,8 @@ export const IconContainer = ({ videos }) => {
                     tabindex="i"
                     ontouchstart=""
                     key={i} 
+                    role='button'
+                    aria-label={video.classname}
                     imageUrl={video.image}
                     onClick={() => {
                         show()
