@@ -1,13 +1,9 @@
 import React from 'react';
 import { Reset } from 'styled-reset';
 import { Wrapper } from './wrapper';
-import {Source, Video, VideoContainer} from './video';
-import {SectionOne, SectionTwo, SectionMiddle} from './section';
-import Title from './title';
-import videoMainIphone from '../video/videoMainIphone.mp4';
-import gnomed from '../video/gnomed.mp4';
-import sample from '../video/sample.mp4';
+import { SectionOne, SectionTwo, SectionMiddle } from './section';
 import Header from './header';
+import ParalaxVideo from './video';
 
 /*
 let videoPaused = false;
@@ -35,23 +31,12 @@ const PauseVideo = () => {
 }*/
 
 const HomePage = () => (
-
     <Wrapper>
         <Reset/>
         <Header/> 
-
-        <VideoContainer>
-            <Title/>
-            <Video id='backgroundVideo' playsInline autoPlay muted loop>
-                {/* <Source src={videoMainIphone} type='video/mp4'/> */}
-                <Source src={gnomed} type='video/mp4'/>
-            </Video>
-        </VideoContainer>
-
+        <ParalaxVideo/>
         <SectionOne/>
-   
         <SectionMiddle/>
-
         <SectionTwo/>
     </Wrapper>
 );

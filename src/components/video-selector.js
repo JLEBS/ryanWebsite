@@ -11,13 +11,13 @@ import {FlexRow, MaxWidthContainer} from './wrapper.js';
 import Urls from './urls';
 
 export const videos = [
-    {
-        id : '', 
-        image : '', 
-        heading : '',
-        description : () => '',
-        classname : ''
-    },
+    // {
+    //     id : '', 
+    //     image : '', 
+    //     heading : '',
+    //     description : () => '',
+    //     classname : ''
+    // },
     {
         id : '7DEvC47tvKc', 
         image : readyup, 
@@ -63,36 +63,36 @@ export const IconContainer = ({ videos }) => {
     const video = videos[videoIndex];
 
     return (
-      <MaxWidthContainer>
-        <IconGroup>
-            {videos.map((video, i) => (
-                <IconItem
-                    href='#'
-                    tabindex="i"
-                    ontouchstart=""
-                    key={i} 
-                    role='button'
-                    aria-label={video.classname}
-                    imageUrl={video.image}
-                    onClick={() => {
-                        show()
-                        setVideoIndex(i)
-                    }}
-                >
-                    {video.Id}
-                </IconItem>
-            ))}
-        </IconGroup>
-        
-        <FlexRow className={'animated fadeInLeft ' + isHidden}>
-            <VideoContainer>
-                <YouTube rel="preconnect" videoId={video.id} />
-            </VideoContainer>
-            <IconDescription>
-                <Subheading darkFont>{video.heading}</Subheading>
-                <video.description/>
-            </IconDescription>
-        </FlexRow>
-      </MaxWidthContainer>
+        <MaxWidthContainer>
+            <IconGroup>
+                {videos.map((video, i) => (
+                    <IconItem
+                        href='#'
+                        tabindex="i"
+                        ontouchstart=""
+                        key={i} 
+                        role='button'
+                        aria-label={video.classname}
+                        imageUrl={video.image}
+                        onClick={() => {
+                            show()
+                            setVideoIndex(i)
+                        }}
+                    >
+                        {video.Id}
+                    </IconItem>
+                ))}
+            </IconGroup>
+            
+            <FlexRow className={'animated fadeInLeft ' + isHidden}>
+                <VideoContainer>
+                    <YouTube rel="preconnect" videoId={video.id} />
+                </VideoContainer>
+                <IconDescription>
+                    <Subheading darkFont>{video.heading}</Subheading>
+                    <video.description/>
+                </IconDescription>
+            </FlexRow>
+        </MaxWidthContainer>
     )
 }

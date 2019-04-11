@@ -112,7 +112,7 @@ export const randomAnimation = () => {
         'fadeInLeft',
         'fadeInRight'
     ]
-   let index =  Math.floor(Math.random() * animations.length);
+    let index =  Math.floor(Math.random() * animations.length);
 
-   return animations[index];
+    return animations[index];
 }

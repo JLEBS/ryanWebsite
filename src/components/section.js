@@ -14,26 +14,14 @@ const ParagraphContainer = styled.div`
     & .classInactive{
         opacity: 0;
     }
-    & .animationComplete{
-    }
 `;
-
-const ref = React.createRef();
-
-const addClass = () => {
-    this.divRef.current.classList.add('animated')
-}
-const removeClass = () => {
-  // this.ref.current.classList.remove('animated')
-  console.log('added class');
-}
 
 const ParagraphTest = ({children}) => (
     <InView>
-        {({ inView, ref, i}) => (
+        {({ inView, ref}) => (
             <ParagraphContainer>
                 <div 
-                    className={inView ? `[ animated fadeInUp ] ${removeClass()}` : 'classInactive'} 
+                    className={inView ? `[ animated fadeInUp ]}` : 'classInactive'} 
                     onAnimationEnd={() => console.log('Animated completed')}
                     ref={ref}
                 >
@@ -86,21 +74,18 @@ export const SectionMiddle = () => (
         <Dash dash alternativeColor/>
         <Line alternativeColor/>
     </Subsection>
-);
+)
 
 export const SectionTwo = () => (
-
     <Subsection>
         <Container secondary>
             <FlexRow center>
                 {/* Profile Image With Wavy Effect, All credit goes to https://codepen.io/enbee81/ */}
                 <ProfileImage/>
-            
                 <FlexColumn>
                     <Heading>
                         Ryan Callard
                     </Heading>
-
                     <Subheading lineHeight>
                         Creative Audio and Video Producer
                     </Subheading> 
